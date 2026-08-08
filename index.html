@@ -272,9 +272,16 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
 .hero__copy{padding-bottom:0}
 
 .hero__label{
-  display:inline-block;padding:7px 14px;border:1px solid var(--line-strong);border-radius:999px;
-  background:var(--white);font-size:12.5px;font-weight:700;color:var(--navy);letter-spacing:.02em;margin-bottom:22px;
+  display:inline-flex;align-items:center;gap:9px;flex-wrap:wrap;
+  padding:8px 16px 8px 10px;border:1px solid var(--line-strong);border-radius:999px;
+  background:var(--white);font-size:13px;font-weight:700;color:var(--navy-deep);
+  letter-spacing:.02em;margin-bottom:22px;box-shadow:0 2px 10px rgba(18,42,67,.06);
 }
+.hero__label b{
+  display:inline-block;padding:4px 11px;border-radius:999px;
+  background:var(--gold-soft);color:var(--navy-deep);font-size:12.5px;font-weight:700;
+}
+.hero__label i{font-style:normal;color:var(--gold-hover);font-weight:700}
 .hero h1{margin-bottom:24px}
 .hero__sub{font-size:calc(var(--fs-body) + 1px);font-weight:500;color:var(--t-body);line-height:1.85}
 .hero__sub + .hero__sub{margin-top:14px}
@@ -466,7 +473,26 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
 .stat__value .word{font-family:var(--font-jp);font-size:40px;font-weight:800;line-height:1.1}
 @media (min-width:768px){ .stat__value .word{font-size:46px} }
 
-.trust3{display:grid;gap:16px;margin:32px 0 36px}
+.cred{
+  margin:28px 0 0;padding:26px 22px;border-radius:var(--card-r);
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);
+}
+@media (min-width:768px){ .cred{padding:30px 32px} }
+.cred__label{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--gold-soft);margin-bottom:20px;
+}
+.cred__label::before{content:"";width:22px;height:2px;background:var(--gold);flex:none}
+.cred__list li{display:grid;gap:6px;padding:16px 0;border-top:1px solid rgba(255,255,255,.14)}
+.cred__list li:first-child{border-top:0;padding-top:0}
+.cred__list li:last-child{padding-bottom:0}
+@media (min-width:768px){
+  .cred__list li{grid-template-columns:210px 1fr;gap:28px;align-items:baseline}
+}
+.cred__k{font-size:15px;font-weight:700;color:var(--gold);line-height:1.6}
+.cred__v{font-size:15px;line-height:1.85;color:#D5E2EE}
+
+.trust3{display:grid;gap:16px;margin:28px 0 36px}
 @media (min-width:640px){ .trust3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px} }
 .trust3__card{
   background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);
@@ -776,7 +802,7 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
     </div>
 
     <div class="hero__copy">
-      <p class="hero__label" data-ibj hidden>IBJ正規加盟店 &times; 関係構築コーチング</p>
+      <p class="hero__label" data-ibj hidden><b>IBJ正規加盟店</b><i aria-hidden="true">&times;</i>男性向け実践型婚活支援</p>
 
       <h1>なかなか会えない。<br>会えても、続かない。</h1>
 
@@ -877,7 +903,7 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
     <div class="sec-head reveal">
       <p class="eyebrow">活動の違い</p>
       <h2>アプリでも相談所でも、<br>止まるのは「会った後」です。</h2>
-      <p>マッチングアプリで手応えがない方も、結婚相談所で活動が進まない方も、詰まっている場所はほとんど同じです。変えるべきなのは、使うサービスではなく、出会った後の行動でした。</p>
+      <p>マッチングアプリで手応えがない方も、結婚相談所で活動が進まない方も、詰まっている場所はほとんど同じです。変えるべきなのは、使うサービスではなく、出会った後の行動でした。そしてその直し方が、担当者の感覚ではなく手順として決まっているかどうかで、結果は変わります。</p>
     </div>
 
     <div class="ba reveal">
@@ -888,10 +914,11 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
           <li><span class="fl-k">アプリ・相談所に登録する</span><span class="fl-d">出会いの入口をつくる。</span></li>
           <li><span class="fl-k">相手を探して申し込む</span><span class="fl-d">条件で絞り込んで申し込む。</span></li>
           <li><span class="fl-k">マッチング・お見合いが成立する</span><span class="fl-d">ここまでは進む。</span></li>
-          <li><span class="fl-k">会話や連絡が続かない</span><span class="fl-d">何が原因かは分からない。</span></li>
+          <li><span class="fl-k">アドバイスは担当者の感覚頼み</span><span class="fl-d">言われることが人によって変わり、当たり外れが大きい。</span></li>
+          <li><span class="fl-k">会話や連絡が続かない</span><span class="fl-d">何を直せばよいのかが分からない。</span></li>
           <li><span class="fl-k">理由が分からないまま次の相手へ</span><span class="fl-d">同じところで、また止まる。</span></li>
         </ul>
-        <p class="ba__foot">出会いの入口は用意されています。ただ、会った後に何を変えればよいかまでは、誰も教えてくれません。</p>
+        <p class="ba__foot">出会いの入口は用意されています。ただ、その先のアドバイスは担当者の経験や感覚に左右されがちで、何を直せばよいのかは人によって変わってしまいます。</p>
       </div>
 
       <div class="ba__col ba__col--after on-dark">
@@ -905,7 +932,7 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
           <li><span class="fl-k">振り返り</span><span class="fl-d">面談で結果をフィードバックし、うまくいかなかった点を修正します。</span></li>
           <li><span class="fl-k">次の行動を決定</span><span class="fl-d">次回までに変える行動を決めて、また実践へ。</span></li>
         </ul>
-        <p class="ba__foot">アプリで止まっていた方も、相談所で止まっていた方も、同じ手順で改善します。一つひとつの出会いを、次の一手につなげます。</p>
+        <p class="ba__foot">手順と評価基準そのものを設計しています。感覚ではなく、33項目・5段階の共通のものさしで見立てるので、アドバイスの当たり外れが起きません。アプリで止まっていた方も、相談所で止まっていた方も、同じ順番で改善します。</p>
       </div>
     </div>
   </div>
@@ -1091,6 +1118,24 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
       </div>
     </div>
 
+    <div class="cred reveal">
+      <p class="cred__label">このプログラムを設計した人</p>
+      <ul class="cred__list">
+        <li>
+          <span class="cred__k">株式会社リクルート</span>
+          <span class="cred__v">経営企画部門に勤務。事業の課題を分解し、実行できる形に落とし込む仕事に取り組んできました。その考え方が、婚活支援の手順づくりの土台になっています。</span>
+        </li>
+        <li>
+          <span class="cred__k">日経WOMAN</span>
+          <span class="cred__v">婚活をテーマにした記事が掲載されました。</span>
+        </li>
+        <li>
+          <span class="cred__k">マッチングアプリ事業</span>
+          <span class="cred__v">男性向けの育成プログラムをゼロから設計し、指導の総責任者を担当。13か月間で20数名を個別に支援し、50％以上が交際に至りました。</span>
+        </li>
+      </ul>
+    </div>
+
     <div class="trust3 reveal">
       <div class="trust3__card" data-ibj hidden>
         <span class="trust3__ico" aria-hidden="true">
@@ -1104,8 +1149,8 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
         <span class="trust3__ico" aria-hidden="true">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.4" cy="14.2" r="3.4"/><circle cx="16.4" cy="8.2" r="2.4"/><path d="M9.4 8.4v1.6M9.4 18.4V20M3.6 14.2h1.6M13.6 14.2h1.6M5.3 10.1l1.1 1.1M12.4 17.2l1.1 1.1M5.3 18.3l1.1-1.1M12.4 11.2l1.1-1.1"/></svg>
         </span>
-        <h3>体系化されたメソッド</h3>
-        <p>リクルート出身のコンサルタントが構築したPDCAの考え方で、会話・連絡・デートの行動を一つずつ最適化します。「理想の相手に選ばれる自分」へ、感覚ではなく手順で近づきます。</p>
+        <h3>感覚に頼らない手順</h3>
+        <p>診断・設計・練習・実践・振り返りという決まった順番と、33項目・5段階の共通のものさし。担当者の感覚ではなく、同じ基準で改善点を特定します。</p>
       </div>
 
       <div class="trust3__card">
@@ -1113,7 +1158,7 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.4 20.6h17.2M3.4 20.6V4"/><path d="M6.6 16.4l4-4.4 3 2.8 5.2-6"/><path d="M14.8 8.8h4v4.2"/></svg>
         </span>
         <h3>確かな育成実績</h3>
-        <p>マッチングアプリ運営会社で男性向けコーチング指導の総責任者を務め、13か月間で20数名を個別に指導。50％以上が交際に至っています。</p>
+        <p>13か月間で20数名を個別に指導し、50％以上が交際に至りました。交際経験がまったくない方も含まれています。</p>
       </div>
     </div>
 
@@ -1160,7 +1205,9 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
       <p>IBJでは、独身証明書や収入証明書等を提出した、結婚意思のある会員との出会いが提供されます。</p>
       <p>一方、出会った後にどのように会話し、距離を縮め、関係を築くかは、一人ひとり異なります。</p>
       <p>当相談所では、IBJの出会いの基盤に加え、会話・LINE・デートの具体的な改善支援を行います。</p>
-      <p class="note note-box">IBJの会員数・成婚数等のデータを掲載する場合は、公開時点のIBJ公式情報を確認し、出典と調査時点を明記してください：<span class="ph">{{IBJ公式データ・出典・調査時点}}</span></p>
+      <!-- 編集メモ：IBJの会員数・成婚数等の具体的な数値を載せる場合は、公開時点のIBJ公式情報を確認し、
+           「出典：日本結婚相談所連盟（IBJ）公式サイト／2026年◯月調査時点」のように出典と調査時点を必ず併記してください。
+           古い数値を固定表示しないこと。自社の実績とIBJ全体の実績を混同しないこと。 -->
     </div>
   </div>
 </section>
@@ -1447,7 +1494,9 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
           <span class="ico" aria-hidden="true"></span>
         </button></h3>
         <div class="faq__a" id="fa6" role="region" aria-labelledby="fq6" data-open="false">
-          <p><span class="ph">{{IBJ加盟後の正式回答}}</span></p>
+          <p>はい。IBJの正規加盟店として、IBJの会員ネットワークからお相手をご紹介できます。</p>
+          <p>IBJでは、独身証明書などの必要書類を提出した、結婚意思のある方が会員として登録されています。そのなかから、整理した相手像に沿ってお見合いを組んでいきます。</p>
+          <p>ご紹介できる人数や条件は活動状況によって変わります。詳しくは無料診断でお伝えします。</p>
         </div>
       </div>
 
@@ -1574,9 +1623,9 @@ var LP_CONFIG = {
   /* 予約ページのURL（TimeRex）。変更する場合はHTML内のリンクも一括置換してください */
   bookingUrl: 'https://timerex.net/s/ba.08h_1a1f/83cf8db1',
 
-  /* IBJ加盟契約が完了したら true。false の間は
-     ヒーローのIBJラベル / IBJセクション / FAQ Q6 が非表示になります */
-  ibjMember: false,
+  /* IBJ加盟契約が完了している場合のみ true。false にすると
+     ヒーローの肩見出し / 実績のIBJカード / IBJセクション / FAQ Q6 が一括で非表示になります */
+  ibjMember: true,
 
   /* 「33項目×5段階」の評価表を正式運用している場合のみ true */
   showRatingScale: true,
