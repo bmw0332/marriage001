@@ -1,0 +1,1766 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>会えても次につながらない男性の婚活支援｜{{サービス名}}</title>
+<meta name="description" content="お見合いやデートはできても、次の関係につながらない原因を見える化。会話・LINE・デートを練習と実践で改善する関係構築型の婚活支援です。30分の無料相談をオンラインで実施しています。">
+<link rel="canonical" href="{{公開URL}}">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="会えているのに、次につながらない。｜{{サービス名}}">
+<meta property="og:description" content="出会いを、関係に変える婚活支援。会話・LINE・デートの詰まりを見える化し、練習と実践で改善します。">
+<meta property="og:image" content="images/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="{{公開URL}}">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23122A43'/%3E%3Cpath d='M9 20.5c2.6-7 10.4-7 13 0' stroke='%23D5A62F' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  --navy:#1F3A5F;
+  --navy-deep:#122A43;
+  --navy-mid:#36536C;
+
+  --white:#FFFFFF;
+  --warm:#FCFBF7;
+  --pale:#EAF2F8;
+  --gray:#F4F6F8;
+
+  --gold:#D5A62F;
+  --gold-hover:#B98A18;
+  --gold-soft:#F7ECD0;
+
+  --t-head:#172A3A;
+  --t-body:#33404D;
+  --t-sub:#66727E;
+  --t-white:#FFFFFF;
+
+  --line:#D9E1E8;
+  --line-strong:#BBC7D1;
+
+  --err:#B42318;
+  --ok:#237A57;
+
+  --font-jp:"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  --font-en:"Inter",var(--font-jp);
+
+  --wrap:1120px;
+  --prose:680px;
+  --hd:64px;
+
+  --fs-h1:34px;  --lh-h1:1.35;
+  --fs-h2:27px;  --lh-h2:1.45;
+  --fs-h3:20px;  --lh-h3:1.5;
+  --fs-body:16px;--lh-body:1.85;
+  --fs-note:14px;
+  --fs-cta:17px;
+
+  --sec-pad:68px;
+  --card-r:16px;
+  --shadow:0 8px 24px rgba(18,42,67,.08);
+}
+@media (min-width:768px){
+  :root{
+    --hd:72px;
+    --fs-h1:44px; --fs-h2:32px; --fs-h3:22px; --fs-body:16.5px;
+    --sec-pad:80px; --fs-cta:18px;
+  }
+}
+@media (min-width:1024px){
+  :root{
+    --fs-h1:52px; --lh-h1:1.25;
+    --fs-h2:36px;
+    --fs-h3:24px;
+    --fs-body:17px; --lh-body:1.9;
+    --sec-pad:104px;
+  }
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;
+  padding-top:var(--hd);
+  font-family:var(--font-jp);
+  font-weight:400;
+  font-size:var(--fs-body);
+  line-height:var(--lh-body);
+  color:var(--t-body);
+  background:var(--white);
+  overflow-x:hidden;
+  font-feature-settings:"palt" 1;
+}
+@media (max-width:767px){ body{padding-bottom:80px} }
+
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+ul,ol{margin:0;padding:0;list-style:none}
+h1,h2,h3,h4,p{margin:0}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+
+:focus-visible{outline:3px solid var(--navy);outline-offset:2px;border-radius:4px}
+.on-dark :focus-visible{outline-color:var(--gold)}
+
+.wrap{width:min(var(--wrap),100% - 32px);margin-inline:auto}
+@media (min-width:768px){ .wrap{width:min(var(--wrap),100% - 48px)} }
+
+.sec{padding-block:var(--sec-pad)}
+.sec[id]{scroll-margin-top:calc(var(--hd) + 12px)}
+
+.bg-white{background:var(--white)}
+.bg-warm{background:var(--warm)}
+.bg-pale{background:var(--pale)}
+.bg-gray{background:var(--gray)}
+.bg-navy{background:var(--navy-deep);color:var(--t-white)}
+
+.prose{max-width:var(--prose)}
+.center{text-align:center}
+.mx-auto{margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+a.sr-only:focus{
+  position:fixed;top:10px;left:10px;z-index:200;width:auto;height:auto;margin:0;clip:auto;
+  padding:12px 20px;background:var(--navy-deep);color:var(--white);border-radius:10px;
+  font-size:15px;font-weight:700;text-decoration:none;
+}
+
+/* ============================================================
+   TYPE
+   ============================================================ */
+h1,.h1{font-size:var(--fs-h1);font-weight:800;line-height:var(--lh-h1);letter-spacing:.01em;color:var(--t-head)}
+h2,.h2{font-size:var(--fs-h2);font-weight:700;line-height:var(--lh-h2);letter-spacing:.02em;color:var(--t-head)}
+h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var(--t-head)}
+.on-dark h1,.on-dark h2,.on-dark h3,.on-dark .h2,.on-dark .h3{color:var(--t-white)}
+.note{font-size:var(--fs-note);line-height:1.7;color:var(--t-sub)}
+.note-box{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.note-dark{font-size:var(--fs-note);line-height:1.7;color:var(--t-body)}
+.on-dark .note{color:#C3D2DF}
+.num{font-family:var(--font-en);font-weight:700;font-variant-numeric:tabular-nums}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:13px;font-weight:700;letter-spacing:.12em;
+  color:var(--navy-mid);margin-bottom:14px;
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--gold)}
+.on-dark .eyebrow{color:var(--gold-soft)}
+
+.sec-head{margin-bottom:40px}
+@media (min-width:768px){ .sec-head{margin-bottom:52px} }
+.sec-head > p:not(.eyebrow){margin-top:18px;max-width:var(--prose)}
+.sec-head.center > p:not(.eyebrow){margin-inline:auto}
+
+.lede{font-size:calc(var(--fs-body) + 1px);line-height:1.9}
+.stack > * + *{margin-top:1.25em}
+
+/* placeholders ------------------------------------------------ */
+.ph{
+  display:inline-block;padding:1px 9px;border:1px dashed var(--line-strong);
+  border-radius:6px;background:var(--gold-soft);color:var(--navy-deep);
+  font-size:.92em;font-weight:500;line-height:1.6;
+}
+.on-dark .ph{background:rgba(213,166,47,.16);border-color:rgba(213,166,47,.55);color:#F7ECD0}
+.ph-block{
+  display:block;padding:18px 20px;border:1px dashed var(--line-strong);
+  border-radius:12px;background:var(--gold-soft);color:var(--navy-deep);
+  font-size:15px;font-weight:500;
+}
+.ph-photo{
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  min-height:200px;border:1px dashed var(--line-strong);border-radius:var(--card-r);
+  background:var(--gold-soft);color:var(--navy-deep);font-size:14px;font-weight:500;padding:20px;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:56px;padding:14px 30px;border-radius:12px;
+  background:var(--gold);color:var(--navy-deep);
+  font-size:var(--fs-cta);font-weight:700;line-height:1.4;text-decoration:none;
+  text-align:center;transition:background-color .18s ease,color .18s ease,transform .18s ease;
+}
+.btn:hover{background:var(--gold-hover);color:var(--white)}
+.btn:active{transform:translateY(1px)}
+.btn .arw{flex:none;width:8px;height:8px;border-top:2px solid currentColor;border-right:2px solid currentColor;transform:rotate(45deg)}
+.btn--block{display:flex;width:100%}
+.btn--sm{min-height:52px;padding:10px 22px;font-size:15px;border-radius:10px}
+
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:12px 22px;
+  border:1px solid var(--line-strong);border-radius:12px;background:var(--white);
+  color:var(--navy);font-weight:700;font-size:15px;text-decoration:none;
+  transition:border-color .18s ease,background-color .18s ease;
+}
+.btn-ghost:hover{border-color:var(--navy);background:var(--pale)}
+
+.cta-block{margin-top:44px;text-align:center}
+.cta-block .micro{margin-top:14px}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.hd{
+  position:fixed;inset:0 0 auto 0;z-index:120;height:var(--hd);
+  background:var(--white);border-bottom:1px solid var(--line);
+}
+.hd__in{display:flex;align-items:center;gap:16px;height:100%}
+.hd__logo{
+  display:flex;align-items:center;gap:9px;font-weight:800;font-size:16px;
+  color:var(--navy-deep);text-decoration:none;letter-spacing:.02em;flex:none;margin-right:auto;
+}
+.hd__logo svg{flex:none}
+.hd__nav{display:none}
+.hd__nav ul{display:flex;gap:26px}
+.hd__nav a{font-size:14.5px;font-weight:500;color:var(--t-body);text-decoration:none;padding:6px 0;position:relative}
+.hd__nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--gold);transition:right .2s ease}
+.hd__nav a:hover::after{right:0}
+.hd__cta{display:none;flex:none;margin-left:20px}
+.hd__burger{
+  display:flex;flex-direction:column;justify-content:center;gap:5px;
+  width:44px;height:44px;align-items:center;border:1px solid var(--line);border-radius:10px;
+}
+.hd__burger span{display:block;width:19px;height:2px;background:var(--navy-deep);transition:transform .2s ease,opacity .2s ease}
+.hd__burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hd__burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.hd__burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.mnav{
+  position:fixed;left:0;right:0;top:var(--hd);z-index:110;
+  background:var(--white);border-bottom:1px solid var(--line);
+  padding:12px 16px 22px;display:none;box-shadow:var(--shadow);
+}
+.mnav[data-open="true"]{display:block}
+.mnav a{display:block;padding:14px 4px;border-bottom:1px solid var(--line);text-decoration:none;font-weight:500}
+.mnav .btn{margin-top:18px}
+
+@media (min-width:768px){
+  .hd__cta{display:block}
+}
+@media (min-width:1024px){
+  .hd__nav{display:block}
+  .hd__burger{display:none}
+  .mnav{display:none !important}
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{background:linear-gradient(102deg,var(--white) 0%,var(--white) 50%,#F5F9FC 62%,var(--pale) 100%);overflow:hidden}
+.hero__in{display:grid;gap:0;padding-block:40px 0}
+@media (min-width:1024px){
+  .hero__in{grid-template-columns:55% 45%;gap:32px;align-items:center;min-height:680px;padding-block:56px}
+}
+.hero__copy{padding-bottom:36px}
+@media (min-width:1024px){ .hero__copy{padding-bottom:0;padding-right:24px} }
+
+.hero__label{
+  display:inline-block;padding:7px 14px;border:1px solid var(--line-strong);border-radius:999px;
+  background:var(--white);font-size:12.5px;font-weight:700;color:var(--navy);letter-spacing:.02em;margin-bottom:22px;
+}
+.hero h1{margin-bottom:24px}
+.hero__sub{font-size:calc(var(--fs-body) + 1px);font-weight:500;color:var(--t-body);line-height:1.85}
+.hero__sub + .hero__sub{margin-top:14px}
+.hero__supp{margin-top:20px;color:var(--t-sub);font-size:15px;line-height:1.8}
+
+.trust{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.trust li{
+  display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:999px;
+  background:var(--white);border:1px solid var(--line);font-size:13.5px;font-weight:500;color:var(--navy-deep);
+}
+.trust li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);flex:none}
+
+.hero__actions{margin-top:30px;display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.hero__actions .btn{width:100%}
+@media (min-width:600px){ .hero__actions .btn{width:auto} }
+.hero__micro{font-size:13.5px;color:var(--t-sub);line-height:1.7}
+
+.hero__media{position:relative;display:flex;justify-content:center;align-items:flex-end}
+.hero__media::before{
+  content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+  width:min(420px,92%);aspect-ratio:1/1;border-radius:50%;
+  background:radial-gradient(circle at 50% 60%,#DCE9F4 0%,rgba(234,242,248,0) 70%);
+}
+.hero__media img{position:relative;width:min(400px,88%);height:auto}
+@media (min-width:1024px){ .hero__media img{width:min(430px,100%)} }
+
+/* ============================================================
+   CARDS / GRIDS
+   ============================================================ */
+.grid{display:grid;gap:16px}
+@media (min-width:640px){ .grid{gap:20px} }
+@media (min-width:768px){ .grid-2{grid-template-columns:repeat(2,1fr)} }
+@media (min-width:900px){ .grid-3{grid-template-columns:repeat(3,1fr)} }
+@media (min-width:900px){ .grid-3-2{grid-template-columns:repeat(3,1fr)} }
+@media (min-width:600px) and (max-width:899px){ .grid-3-2{grid-template-columns:repeat(2,1fr)} }
+
+.card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--card-r);
+  box-shadow:var(--shadow);padding:24px;
+}
+@media (min-width:768px){ .card{padding:30px} }
+.card h3{margin-bottom:12px}
+.card p{font-size:15.5px;line-height:1.85}
+
+.card--pain{padding-top:22px}
+.card--pain p{font-size:16px;font-weight:500;color:var(--navy-deep);line-height:1.8}
+.card--pain::before{
+  content:"";display:block;width:34px;height:3px;border-radius:2px;
+  background:var(--line-strong);margin-bottom:16px;
+}
+
+.cause-no{
+  display:inline-flex;align-items:baseline;gap:7px;font-size:12px;font-weight:700;
+  letter-spacing:.1em;color:var(--navy-mid);margin-bottom:12px;
+}
+.cause-no b{font-family:var(--font-en);font-size:15px;color:var(--navy-deep)}
+
+/* ============================================================
+   BEFORE / AFTER
+   ============================================================ */
+.ba{display:grid;gap:20px}
+@media (min-width:900px){ .ba{grid-template-columns:1fr 1fr;gap:24px;align-items:stretch} }
+.ba__col{border-radius:var(--card-r);padding:26px 22px;border:1px solid var(--line)}
+@media (min-width:768px){ .ba__col{padding:32px 28px} }
+.ba__col--before{background:var(--white)}
+.ba__col--after{background:var(--navy-deep);border-color:var(--navy-deep);color:var(--t-white)}
+.ba__tag{
+  display:inline-block;padding:5px 12px;border-radius:999px;font-size:12.5px;font-weight:700;
+  letter-spacing:.06em;margin-bottom:18px;
+}
+.ba__col--before .ba__tag{background:var(--gray);color:var(--t-sub);border:1px solid var(--line)}
+.ba__col--after .ba__tag{background:var(--gold);color:var(--navy-deep)}
+.ba__col h3{margin-bottom:18px}
+.ba__col--after h3{color:var(--t-white)}
+
+.flow li{
+  position:relative;padding:13px 16px;border-radius:10px;font-size:15.5px;font-weight:500;line-height:1.6;
+}
+.ba__col--before .flow li{background:var(--gray);color:var(--t-sub);border:1px solid var(--line)}
+.ba__col--after .flow li{background:rgba(255,255,255,.07);color:var(--t-white);border:1px solid rgba(255,255,255,.16)}
+.flow li:not(:last-child)::after{
+  content:"";position:absolute;left:50%;bottom:-18px;margin-left:-5px;
+  width:9px;height:9px;transform:rotate(45deg);
+  border-right:2px solid var(--line-strong);border-bottom:2px solid var(--line-strong);
+}
+.ba__col--after .flow li:not(:last-child)::after{border-color:var(--gold)}
+.flow li + li{margin-top:28px}
+.ba__foot{margin-top:22px;font-size:14.5px;line-height:1.8}
+.ba__col--before .ba__foot{color:var(--t-sub)}
+.ba__col--after .ba__foot{color:#D5E2EE}
+
+/* ============================================================
+   CYCLE
+   ============================================================ */
+.cycle{position:relative;display:grid;gap:22px}
+@media (min-width:900px){ .cycle{grid-template-columns:repeat(5,1fr);gap:18px} }
+.cycle::before{content:none}
+@media (min-width:900px){
+  .cycle::before{
+    content:"";position:absolute;top:26px;left:10%;right:10%;height:2px;
+    background:var(--gold);opacity:.5;
+  }
+}
+.cycle__step{position:relative;display:flex;gap:16px;align-items:flex-start}
+@media (min-width:900px){ .cycle__step{flex-direction:column;gap:0;text-align:left} }
+.cycle__num{
+  flex:none;display:flex;align-items:center;justify-content:center;
+  width:52px;height:52px;border-radius:50%;background:var(--navy-deep);color:var(--t-white);
+  font-family:var(--font-en);font-size:19px;font-weight:700;
+}
+@media (min-width:900px){ .cycle__num{margin-bottom:20px} }
+.cycle__body h3{margin-bottom:8px}
+.cycle__body p{font-size:15px;line-height:1.8;color:var(--t-body)}
+.cycle__loop{
+  display:flex;align-items:center;gap:12px;margin-top:32px;padding:16px 20px;
+  border:1px dashed var(--line-strong);border-radius:12px;background:var(--gray);
+  font-size:15px;font-weight:500;color:var(--navy-deep);
+}
+.cycle__loop svg{flex:none;color:var(--gold-hover)}
+
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:8px}
+.chain li{
+  display:inline-flex;align-items:center;gap:10px;padding:9px 16px;border-radius:999px;
+  background:var(--white);border:1px solid var(--line);font-size:14.5px;font-weight:700;color:var(--navy-deep);
+}
+.chain li:not(:last-child)::after{
+  content:"";width:7px;height:7px;transform:rotate(45deg);
+  border-top:2px solid var(--gold);border-right:2px solid var(--gold);margin-left:2px;
+}
+
+.media-row{display:grid;gap:16px;margin-top:40px}
+@media (min-width:768px){ .media-row{grid-template-columns:1fr 1fr;gap:24px} }
+.media-row figure{margin:0}
+.media-row img{border-radius:var(--card-r);width:100%}
+.media-row figcaption{margin-top:12px;font-size:13.5px;color:var(--t-sub);line-height:1.7}
+
+/* ============================================================
+   SERVICES
+   ============================================================ */
+.svc{position:relative}
+.svc__no{
+  display:flex;align-items:center;gap:9px;
+  font-family:var(--font-en);font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--navy-mid);
+  margin-bottom:10px;
+}
+.svc__no::after{content:"";width:18px;height:2px;background:var(--gold)}
+.svc h3{margin-bottom:14px}
+.svc ul li{position:relative;padding-left:18px;font-size:15px;line-height:1.8}
+.svc ul li + li{margin-top:6px}
+.svc ul li::before{content:"";position:absolute;left:0;top:.72em;width:6px;height:6px;border-radius:50%;background:var(--navy-mid)}
+
+.split{display:grid;gap:28px;align-items:center}
+@media (min-width:900px){ .split{grid-template-columns:1fr 1fr;gap:48px} }
+.split img{border-radius:var(--card-r);width:100%}
+@media (min-width:900px){ .split--rev .split__media{order:2} }
+
+.badge-line{
+  display:inline-flex;align-items:center;gap:10px;margin-top:26px;padding:12px 18px;
+  border-radius:12px;background:var(--gold-soft);border:1px solid #E7D3A2;
+  font-size:14.5px;font-weight:700;color:var(--navy-deep);
+}
+
+/* ============================================================
+   RESULTS
+   ============================================================ */
+.stats{display:grid;gap:16px;margin-bottom:36px}
+@media (min-width:640px){ .stats{grid-template-columns:1fr 1fr;gap:24px} }
+.stat{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);
+  border-radius:var(--card-r);padding:28px 24px;
+}
+.stat__label{font-size:14.5px;font-weight:500;color:#C3D2DF;margin-bottom:10px}
+.stat__value{display:flex;align-items:baseline;gap:6px;color:var(--gold)}
+.stat__value b{font-family:var(--font-en);font-size:56px;font-weight:700;line-height:1}
+.stat__value span{font-size:20px;font-weight:700}
+@media (min-width:768px){ .stat__value b{font-size:64px} }
+
+.notice{
+  border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:22px 20px;
+  background:rgba(255,255,255,.04);
+}
+.notice dt{font-size:13px;font-weight:700;color:var(--gold-soft);letter-spacing:.04em}
+.notice dd{margin:6px 0 0;font-size:14.5px;line-height:1.75;color:#D5E2EE}
+.notice > div + div{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.14)}
+
+/* ============================================================
+   CASES
+   ============================================================ */
+.cases{position:relative}
+.cases__track{
+  display:grid;grid-auto-flow:column;grid-auto-columns:min(88%,340px);
+  gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:6px 2px 20px;margin-inline:-2px;
+  scrollbar-width:thin;
+}
+.cases__track > *{scroll-snap-align:start}
+@media (min-width:900px){
+  .cases__track{grid-auto-columns:calc((100% - 40px)/3);gap:20px}
+}
+.case__meta{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.case__avatar{
+  flex:none;width:44px;height:44px;border-radius:50%;background:var(--pale);
+  display:flex;align-items:center;justify-content:center;color:var(--navy-mid);
+}
+.case__who{font-size:15px;font-weight:700;color:var(--navy-deep);line-height:1.5}
+.case__block + .case__block{margin-top:16px}
+.case__k{
+  display:block;font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--navy-mid);margin-bottom:5px;
+}
+.case__block p{font-size:15px;line-height:1.8}
+.case__quote{
+  margin-top:18px;padding:14px 16px;background:var(--gray);border-radius:10px;
+  font-size:14.5px;line-height:1.8;color:var(--t-body);
+}
+.cases__nav{display:flex;gap:10px;justify-content:flex-end;margin-top:4px}
+.cases__nav button{
+  width:44px;height:44px;border:1px solid var(--line-strong);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;background:var(--white);
+  transition:border-color .18s ease,background-color .18s ease;
+}
+.cases__nav button:hover{border-color:var(--navy);background:var(--pale)}
+.cases__nav button[disabled]{opacity:.35;cursor:default}
+.cases__nav i{width:9px;height:9px;border-top:2px solid var(--navy-deep);border-right:2px solid var(--navy-deep)}
+.cases__nav .prev i{transform:rotate(-135deg);margin-left:3px}
+.cases__nav .next i{transform:rotate(45deg);margin-right:3px}
+
+/* ============================================================
+   TEAM
+   ============================================================ */
+.team-name{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.team-role{
+  display:inline-block;padding:5px 12px;border-radius:999px;background:var(--navy-deep);
+  color:var(--t-white);font-size:12.5px;font-weight:700;letter-spacing:.04em;
+}
+.team-name .h3{font-size:calc(var(--fs-h3) + 2px)}
+.def{margin-top:26px}
+.def > div{padding:14px 0;border-top:1px solid var(--line)}
+.def > div:last-child{border-bottom:1px solid var(--line)}
+.def dt{font-size:13px;font-weight:700;color:var(--navy-mid);letter-spacing:.06em;margin-bottom:8px}
+.def dd{margin:0}
+
+/* ============================================================
+   PRICING
+   ============================================================ */
+.price{
+  border:1px solid var(--line);border-radius:var(--card-r);background:var(--white);
+  box-shadow:var(--shadow);overflow:hidden;
+}
+.price__head{padding:24px;border-bottom:1px solid var(--line);background:var(--warm)}
+@media (min-width:768px){ .price__head{padding:30px 34px} }
+.price__plan{font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--navy-mid);margin-bottom:6px}
+.price__rows{display:grid;gap:0}
+@media (min-width:768px){ .price__rows{grid-template-columns:repeat(3,1fr)} }
+.price__row{padding:20px 24px;border-bottom:1px solid var(--line)}
+@media (min-width:768px){
+  .price__row{padding:26px 34px;border-bottom:0;border-right:1px solid var(--line)}
+  .price__row:last-child{border-right:0}
+}
+.price__k{font-size:14px;font-weight:700;color:var(--navy-mid);margin-bottom:8px}
+.price__v{display:flex;align-items:baseline;gap:4px;color:var(--navy-deep)}
+.price__v b{font-family:var(--font-en);font-size:30px;font-weight:700;line-height:1.1}
+.price__v span{font-size:15px;font-weight:700}
+.price__v small{font-size:13px;font-weight:500;color:var(--t-sub);margin-left:2px}
+
+.price__total{padding:24px;background:var(--pale);border-top:1px solid var(--line)}
+@media (min-width:768px){ .price__total{padding:28px 34px;display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px} }
+.price__total .t-k{font-size:14.5px;font-weight:700;color:var(--navy-deep);flex:none}
+.price__total .t-v{display:flex;align-items:baseline;gap:4px;color:var(--navy-deep);margin-top:8px;flex:none;white-space:nowrap}
+@media (min-width:768px){ .price__total .t-v{margin-top:0} }
+.price__total .t-v b{font-family:var(--font-en);font-size:36px;font-weight:700;line-height:1}
+.price__calc{margin-top:12px;font-size:13.5px;color:var(--t-body);line-height:1.7}
+@media (min-width:768px){ .price__calc{flex-basis:100%;margin-top:10px} }
+.price__body{padding:24px}
+@media (min-width:768px){ .price__body{padding:32px 34px} }
+.price__body h3{margin-bottom:16px}
+.incl{display:grid;gap:8px}
+@media (min-width:640px){ .incl{grid-template-columns:1fr 1fr;gap:8px 24px} }
+.incl li{position:relative;padding-left:26px;font-size:15px;line-height:1.75}
+.incl li::before{
+  content:"";position:absolute;left:4px;top:.45em;width:11px;height:6px;
+  border-left:2px solid var(--ok);border-bottom:2px solid var(--ok);transform:rotate(-45deg);
+}
+
+/* ============================================================
+   FIT
+   ============================================================ */
+.fit{display:grid;gap:20px}
+@media (min-width:900px){ .fit{grid-template-columns:1fr 1fr;gap:24px} }
+.fit__col{background:var(--white);border:1px solid var(--line);border-radius:var(--card-r);padding:26px 22px;box-shadow:var(--shadow)}
+@media (min-width:768px){ .fit__col{padding:32px 28px} }
+.fit__head{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.fit__icon{
+  flex:none;width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+}
+.fit--yes .fit__icon{background:#E4F1EB;color:var(--ok)}
+.fit--no .fit__icon{background:var(--gray);color:var(--t-sub)}
+.fit__col ul li{position:relative;padding-left:24px;font-size:15.5px;line-height:1.8}
+.fit__col ul li + li{margin-top:12px}
+.fit--yes ul li::before{
+  content:"";position:absolute;left:2px;top:.5em;width:11px;height:6px;
+  border-left:2px solid var(--ok);border-bottom:2px solid var(--ok);transform:rotate(-45deg);
+}
+.fit--no ul li::before{
+  content:"";position:absolute;left:2px;top:.85em;width:12px;height:2px;background:var(--line-strong);
+}
+
+/* ============================================================
+   CONSULT
+   ============================================================ */
+.steps-num{counter-reset:s}
+.steps-num li{position:relative;padding-left:52px;counter-increment:s}
+.steps-num li + li{margin-top:26px}
+.steps-num li::before{
+  content:counter(s);position:absolute;left:0;top:0;
+  width:36px;height:36px;border-radius:50%;background:var(--gold);color:var(--navy-deep);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-en);font-size:16px;font-weight:700;
+}
+.steps-num h3{margin-bottom:8px;font-size:calc(var(--fs-h3) - 2px)}
+.steps-num p{font-size:15px;line-height:1.8;color:#D5E2EE}
+
+.gift{
+  margin-top:32px;padding:22px;border-radius:var(--card-r);
+  border:1px solid rgba(213,166,47,.45);background:rgba(213,166,47,.1);
+}
+.gift__tag{display:inline-block;padding:4px 11px;border-radius:999px;background:var(--gold);color:var(--navy-deep);font-size:12px;font-weight:700;margin-bottom:12px}
+.gift h3{font-size:18px;margin-bottom:10px}
+.gift ul li{position:relative;padding-left:16px;font-size:14.5px;color:#D5E2EE}
+.gift ul li::before{content:"";position:absolute;left:0;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+
+.tick{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:18px}
+.tick li{font-size:13.5px;color:#C3D2DF;display:inline-flex;align-items:center;gap:7px}
+.tick li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold);flex:none}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq{max-width:820px;margin-inline:auto;border-top:1px solid var(--line)}
+.faq__item{border-bottom:1px solid var(--line)}
+.faq__q{
+  width:100%;display:flex;align-items:flex-start;gap:16px;text-align:left;
+  padding:22px 4px;font-size:16.5px;font-weight:700;color:var(--navy-deep);line-height:1.6;
+}
+.faq__q .q{font-family:var(--font-en);font-size:15px;color:var(--navy-mid);flex:none;margin-top:1px}
+.faq__q .ico{margin-left:auto;flex:none;position:relative;width:16px;height:16px;margin-top:5px}
+.faq__q .ico::before,.faq__q .ico::after{
+  content:"";position:absolute;left:0;top:7px;width:16px;height:2px;background:var(--navy-mid);
+  transition:transform .2s ease;
+}
+.faq__q .ico::after{transform:rotate(90deg)}
+.faq__q[aria-expanded="true"] .ico::after{transform:rotate(0)}
+.faq__a{display:none;padding:0 4px 26px 36px}
+.faq__a[data-open="true"]{display:block}
+.faq__a p{font-size:15.5px;line-height:1.85}
+.faq__a p + p{margin-top:12px}
+
+/* ============================================================
+   FINAL / FOOTER / STICKY
+   ============================================================ */
+.final{display:grid;gap:32px;align-items:center}
+@media (min-width:900px){ .final{grid-template-columns:1.15fr .85fr;gap:56px} }
+.final__media img{border-radius:var(--card-r);width:100%;max-width:420px;margin-inline:auto}
+
+.ft{background:var(--navy-deep);color:#C3D2DF;padding-block:52px 32px;font-size:14.5px}
+.ft a{color:#DCE7F0;text-decoration:none}
+.ft a:hover{text-decoration:underline}
+.ft__top{display:grid;gap:32px}
+@media (min-width:768px){ .ft__top{grid-template-columns:1.2fr 1fr;gap:48px} }
+.ft__logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:17px;color:var(--white);margin-bottom:18px}
+.ft__info > div{display:flex;gap:14px;padding:7px 0;line-height:1.7}
+.ft__info dt{flex:none;width:76px;color:#8FA6BB;font-size:13px;padding-top:2px}
+.ft__info dd{margin:0}
+.ft__links{display:flex;flex-wrap:wrap;gap:10px 24px;margin-bottom:22px}
+.ft__note{margin-top:34px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;line-height:1.8;color:#8FA6BB}
+.ft__copy{margin-top:18px;font-size:12.5px;color:#8FA6BB}
+
+.sticky{
+  position:fixed;left:0;right:0;bottom:0;z-index:130;
+  height:72px;background:var(--white);border-top:1px solid var(--line);
+  display:flex;align-items:center;padding:0 16px;
+}
+.sticky .btn{width:100%;min-height:52px;height:52px;padding:0 28px;font-size:16px}
+@media (min-width:768px){ .sticky{display:none} }
+
+/* ============================================================
+   MOTION
+   ============================================================ */
+.js-anim .reveal:not(.is-visible){opacity:0;transform:translateY(14px)}
+.reveal{transition:opacity .55s ease,transform .55s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js-anim .reveal:not(.is-visible){opacity:1;transform:none}
+  *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important}
+}
+
+[hidden]{display:none !important}
+</style>
+</head>
+
+<body>
+<a href="#main" class="sr-only">本文へスキップ</a>
+
+<!-- ==========================================================
+     HEADER
+     ========================================================== -->
+<header class="hd">
+  <div class="wrap hd__in">
+    <a href="#top" class="hd__logo">
+      <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#122A43"/><path d="M9 20.5c2.6-7 10.4-7 13 0" stroke="#D5A62F" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
+      <span>{{サービス名}}</span>
+    </a>
+
+    <nav class="hd__nav" aria-label="ページ内メニュー">
+      <ul>
+        <li><a href="#method">特徴</a></li>
+        <li><a href="#services">支援内容</a></li>
+        <li><a href="#results">実績</a></li>
+        <li><a href="#pricing">料金</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ul>
+    </nav>
+
+    <div class="hd__cta">
+      <a class="btn btn--sm" href="{{予約URL}}" data-cta="cta_header">30分の無料診断を予約する</a>
+    </div>
+
+    <button class="hd__burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" data-open="false">
+  <nav aria-label="ページ内メニュー（モバイル）">
+    <a href="#method">特徴</a>
+    <a href="#services">支援内容</a>
+    <a href="#results">実績</a>
+    <a href="#pricing">料金</a>
+    <a href="#faq">よくある質問</a>
+  </nav>
+  <a class="btn btn--block" href="{{予約URL}}" data-cta="cta_header">30分の無料診断を予約する</a>
+</div>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ==========================================================
+     HERO
+     ========================================================== -->
+<section class="hero">
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <p class="hero__label" data-ibj hidden>IBJ正規加盟店 &times; 関係構築コーチング</p>
+
+      <h1>会えているのに、<br>次につながらない。</h1>
+
+      <p class="hero__sub">婚活の詰まりを見える化し、<br>会話・LINE・デートを練習と実践で改善する。</p>
+      <p class="hero__sub">理想の相手と、<br>結婚相手として選び合える自分へ。</p>
+
+      <p class="hero__supp">出会いの数を増やすだけではなく、<br>出会った後の関係づくりまで具体的に支援します。</p>
+
+      <ul class="trust">
+        <li>オンラインで全国対応</li>
+        <li>具体的なフィードバック</li>
+        <li>無理な勧誘なし</li>
+      </ul>
+
+      <div class="hero__actions">
+        <a class="btn" href="{{予約URL}}" data-cta="cta_hero">
+          30分の無料婚活ボトルネック診断を予約する<i class="arw" aria-hidden="true"></i>
+        </a>
+        <p class="hero__micro">30分で、現在の課題・優先順位・次の一手を整理します。</p>
+        <a class="btn-ghost" href="#method">支援内容を見る</a>
+      </div>
+    </div>
+
+    <div class="hero__media">
+      <img src="images/hero-counselor.webp" width="900" height="1086"
+           alt="ネイビーのスーツを着た女性代表カウンセラー"
+           fetchpriority="high" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     共感
+     ========================================================== -->
+<section class="sec bg-white" id="empathy">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">よくある詰まり</p>
+      <h2>こんなところで、<br>婚活が止まっていませんか？</h2>
+    </div>
+
+    <div class="grid grid-2 reveal">
+      <div class="card card--pain"><p>会うところまでは進むが、<br>2回目のデートにつながらない。</p></div>
+      <div class="card card--pain"><p>LINEのやり取りが続かず、<br>自然に連絡が途切れてしまう。</p></div>
+      <div class="card card--pain"><p>仮交際には進むが、<br>関係が深まらない。</p></div>
+      <div class="card card--pain"><p>何が悪かったのか分からず、<br>同じ失敗を繰り返している。</p></div>
+    </div>
+
+    <div class="prose stack reveal" style="margin-top:44px">
+      <p>相手から、うまくいかなかった理由を具体的に教えてもらえることはほとんどありません。</p>
+      <p>そのため、一人で活動を続けても、何を変えるべきか分からないままになりがちです。</p>
+      <p style="font-weight:700;color:var(--navy-deep)">必要なのは、精神論ではなく、次に変える行動が分かることです。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     問題の原因
+     ========================================================== -->
+<section class="sec bg-gray" id="cause">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">原因の整理</p>
+      <h2>問題は、魅力不足ではなく、<br>改善材料が手元にないこと。</h2>
+    </div>
+
+    <div class="grid grid-3 reveal">
+      <div class="card svc">
+        <span class="cause-no">原因 <b>01</b></span>
+        <h3>相手からフィードバックを得られない</h3>
+        <p>お見合いやデート後に断られても、具体的な理由まで知ることは困難です。</p>
+      </div>
+      <div class="card svc">
+        <span class="cause-no">原因 <b>02</b></span>
+        <h3>アドバイスが抽象的</h3>
+        <p>自信を持つ、自然体で話す、積極的になるといった助言だけでは、次の行動に変換できません。</p>
+      </div>
+      <div class="card svc">
+        <span class="cause-no">原因 <b>03</b></span>
+        <h3>自分の行動を客観視しにくい</h3>
+        <p>会話の癖、質問の仕方、距離の縮め方は、本人だけでは気づきにくいものです。</p>
+      </div>
+    </div>
+
+    <div class="prose reveal" style="margin-top:40px">
+      <p style="font-weight:700;color:var(--navy-deep)">性格を否定するのではなく、行動を分解すれば、改善点は具体化できます。</p>
+    </div>
+
+    <div class="cta-block reveal">
+      <a class="btn" href="{{予約URL}}" data-cta="cta_after_problem">
+        30分の無料婚活ボトルネック診断を予約する<i class="arw" aria-hidden="true"></i>
+      </a>
+      <p class="note micro">まずは、どこで止まっているかを一緒に整理します。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     Before / After
+     ========================================================== -->
+<section class="sec bg-pale" id="compare">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">活動の違い</p>
+      <h2>出会いの数だけでなく、<br>関係を深める力を改善する。</h2>
+    </div>
+
+    <div class="ba reveal">
+      <div class="ba__col ba__col--before">
+        <span class="ba__tag">BEFORE</span>
+        <h3>一般的な活動</h3>
+        <ul class="flow">
+          <li>入会</li>
+          <li>相手を探す</li>
+          <li>会う</li>
+          <li>関係が続かない</li>
+          <li>理由が分からないまま次へ進む</li>
+        </ul>
+        <p class="ba__foot">出会いは提供されても、その後の具体的な改善方法が分からない。</p>
+      </div>
+
+      <div class="ba__col ba__col--after on-dark">
+        <span class="ba__tag">AFTER</span>
+        <h3>当サービス</h3>
+        <ul class="flow">
+          <li>診断</li>
+          <li>設計</li>
+          <li>練習</li>
+          <li>実践</li>
+          <li>振り返り</li>
+          <li>次の行動を決定</li>
+        </ul>
+        <p class="ba__foot">一つひとつの出会いを、次の改善につなげます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     独自メソッド
+     ========================================================== -->
+<section class="sec bg-white" id="method">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">関係構築改善サイクル</p>
+      <h2>診断して終わらない。<br>行動が変わるまで伴走する。</h2>
+      <p>婚活のどこで止まっているかを整理し、次に変える行動を決め、本番前に練習します。実践した結果を振り返り、また次の行動へ反映します。</p>
+    </div>
+
+    <ol class="cycle reveal">
+      <li class="cycle__step">
+        <span class="cycle__num" aria-hidden="true">1</span>
+        <div class="cycle__body"><h3>診断</h3><p>婚活のどの段階で関係が止まっているかを整理する。</p></div>
+      </li>
+      <li class="cycle__step">
+        <span class="cycle__num" aria-hidden="true">2</span>
+        <div class="cycle__body"><h3>設計</h3><p>次回までに変える行動を、具体的に決める。</p></div>
+      </li>
+      <li class="cycle__step">
+        <span class="cycle__num" aria-hidden="true">3</span>
+        <div class="cycle__body"><h3>練習</h3><p>会話、LINE、デート等を、本番前に練習する。</p></div>
+      </li>
+      <li class="cycle__step">
+        <span class="cycle__num" aria-hidden="true">4</span>
+        <div class="cycle__body"><h3>実践</h3><p>実際のお見合い、仮交際、デートで行動する。</p></div>
+      </li>
+      <li class="cycle__step">
+        <span class="cycle__num" aria-hidden="true">5</span>
+        <div class="cycle__body"><h3>振り返り</h3><p>結果と相手の反応を整理し、次の行動へ反映する。</p></div>
+      </li>
+    </ol>
+
+    <p class="cycle__loop reveal">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15.5-6.2"/><path d="M21 12a9 9 0 0 1-15.5 6.2"/><path d="M18.5 2v4h-4"/><path d="M5.5 22v-4h4"/></svg>
+      5まで進んだら、また1へ。1回で終わらせず、繰り返して改善します。
+    </p>
+
+    <div class="media-row reveal">
+      <figure>
+        <img src="images/diagnosis-review.webp" width="605" height="387" loading="lazy" decoding="async"
+             alt="資料を見ながら活動状況を分析する女性カウンセラー">
+        <figcaption>診断・振り返りでは、活動記録と相手の反応を材料に、詰まっている段階を特定します。</figcaption>
+      </figure>
+      <figure>
+        <img src="images/method-explain.webp" width="620" height="385" loading="lazy" decoding="async"
+             alt="モニターを使ってプログラムの流れを説明する女性カウンセラー">
+        <figcaption>設計では、次回までに変える行動を1つか2つに絞り、実行できる形まで具体化します。</figcaption>
+      </figure>
+    </div>
+
+    <div class="prose stack reveal" style="margin-top:48px">
+      <p>アドバイスを聞くだけでは、行動は変わりません。</p>
+      <ul class="chain">
+        <li>理解する</li>
+        <li>練習する</li>
+        <li>実際に使う</li>
+        <li>振り返る</li>
+      </ul>
+      <p>この繰り返しによって、関係構築力を一つずつ改善します。</p>
+    </div>
+
+    <div class="cta-block reveal">
+      <a class="btn" href="{{予約URL}}" data-cta="cta_after_method">
+        30分の無料婚活ボトルネック診断を予約する<i class="arw" aria-hidden="true"></i>
+      </a>
+      <p class="note micro">現在の詰まりポイントを、その場で言語化します。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     支援内容
+     ========================================================== -->
+<section class="sec bg-warm" id="services">
+  <div class="wrap">
+    <div class="split" style="margin-bottom:48px">
+      <div class="reveal">
+        <p class="eyebrow">支援内容</p>
+        <h2>婚活の各段階を、<br>具体的な行動まで支援します。</h2>
+        <p style="margin-top:18px">方針の整理からプロフィール、身だしなみ、会話練習、デートとLINE、そして振り返りまで。活動の流れに沿って、次に何をするかが分かる状態を保ちます。</p>
+        <div class="badge-line" data-rating hidden>33項目&times;5段階で、お見合い・会話の改善点を見える化</div>
+      </div>
+      <div class="split__media reveal">
+        <img src="images/feedback-tablet.webp" width="617" height="387" loading="lazy" decoding="async"
+             alt="男性相談者にタブレットを使って説明する女性カウンセラー">
+      </div>
+    </div>
+
+    <div class="grid grid-3-2 reveal">
+      <div class="card svc">
+        <span class="svc__no">01</span>
+        <h3>婚活方針・相手像の整理</h3>
+        <ul>
+          <li>どのような結婚生活を望むか</li>
+          <li>どのような相手と合うか</li>
+          <li>活動の優先順位を整理</li>
+        </ul>
+      </div>
+      <div class="card svc">
+        <span class="svc__no">02</span>
+        <h3>プロフィール支援</h3>
+        <ul>
+          <li>自己紹介文の作成・改善</li>
+          <li>写真の選定</li>
+          <li>相手に伝わる強みの言語化</li>
+        </ul>
+      </div>
+      <div class="card svc">
+        <span class="svc__no">03</span>
+        <h3>服装・身だしなみ</h3>
+        <ul>
+          <li>第一印象の確認</li>
+          <li>服装、髪型、清潔感の改善</li>
+          <li>必要に応じた購入先の提案</li>
+        </ul>
+      </div>
+      <div class="card svc">
+        <span class="svc__no">04</span>
+        <h3>お見合い・会話練習</h3>
+        <ul>
+          <li>話題の広げ方</li>
+          <li>質問と自己開示のバランス</li>
+          <li>相手との距離感</li>
+          <li>実践形式のロールプレイ</li>
+        </ul>
+      </div>
+      <div class="card svc">
+        <span class="svc__no">05</span>
+        <h3>デート・LINE支援</h3>
+        <ul>
+          <li>次のデートにつながる連絡</li>
+          <li>メッセージの頻度と長さ</li>
+          <li>デートの流れ</li>
+          <li>関係を深めるタイミング</li>
+        </ul>
+      </div>
+      <div class="card svc">
+        <span class="svc__no">06</span>
+        <h3>定期フィードバック</h3>
+        <ul>
+          <li>活動結果の振り返り</li>
+          <li>改善点の具体化</li>
+          <li>次回までの行動設定</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     実績
+     ========================================================== -->
+<section class="sec bg-navy on-dark" id="results">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">実績</p>
+      <h2>実績は、範囲と定義を<br>明確にして掲載します。</h2>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat">
+        <p class="stat__label">恋愛・婚活支援</p>
+        <p class="stat__value"><b class="num">24</b><span>名</span></p>
+      </div>
+      <div class="stat">
+        <p class="stat__label">交際開始</p>
+        <p class="stat__value"><b class="num">13</b><span>名</span></p>
+      </div>
+    </div>
+
+    <dl class="notice reveal">
+      <div>
+        <dt>実績の範囲</dt>
+        <dd>過去の恋愛・婚活支援における実績です。IBJ会員に限定した実績ではありません。</dd>
+      </div>
+      <div>
+        <dt>対象期間</dt>
+        <dd><span class="ph">{{実績対象期間}}</span></dd>
+      </div>
+      <div>
+        <dt>交際開始の定義</dt>
+        <dd><span class="ph">{{交際開始の定義}}</span></dd>
+      </div>
+      <div>
+        <dt>結果について</dt>
+        <dd>結果には個人差があり、交際・成婚を保証するものではありません。</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ==========================================================
+     事例
+     ========================================================== -->
+<section class="sec bg-white" id="cases">
+  <div class="wrap cases">
+    <div class="sec-head reveal">
+      <p class="eyebrow">事例</p>
+      <h2>行動を変えた方の事例</h2>
+      <p>掲載は、ご本人の許可を得た内容に限っています。結果には個人差があります。</p>
+    </div>
+
+    <div class="cases__nav reveal">
+      <button type="button" class="prev" aria-label="前の事例を表示"><i aria-hidden="true"></i></button>
+      <button type="button" class="next" aria-label="次の事例を表示"><i aria-hidden="true"></i></button>
+    </div>
+
+    <ul class="cases__track" id="casesTrack" tabindex="0" aria-label="事例一覧（横スクロールできます）"></ul>
+  </div>
+</section>
+
+<!-- ==========================================================
+     IBJ（加盟契約完了時のみ表示）
+     ========================================================== -->
+<section class="sec bg-pale" id="ibj" data-ibj hidden>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">出会いの基盤</p>
+      <h2>出会いの基盤はIBJ。<br>差が出るのは、出会った後の支援です。</h2>
+    </div>
+
+    <div class="prose stack reveal">
+      <p>IBJでは、独身証明書や収入証明書等を提出した、結婚意思のある会員との出会いが提供されます。</p>
+      <p>一方、出会った後にどのように会話し、距離を縮め、関係を築くかは、一人ひとり異なります。</p>
+      <p>当相談所では、IBJの出会いの基盤に加え、会話・LINE・デートの具体的な改善支援を行います。</p>
+      <p class="note note-box">IBJの会員数・成婚数等のデータを掲載する場合は、公開時点のIBJ公式情報を確認し、出典と調査時点を明記してください：<span class="ph">{{IBJ公式データ・出典・調査時点}}</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     支援体制・代表紹介
+     ========================================================== -->
+<section class="sec bg-warm" id="team">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">支援体制</p>
+      <h2>男性目線だけに偏らない、<br>客観的な伴走体制。</h2>
+    </div>
+
+    <div class="split reveal">
+      <div class="split__media">
+        <img src="images/counselor-portrait.webp" width="760" height="964" loading="lazy" decoding="async"
+             alt="ネイビーのスーツを着た女性代表カウンセラー">
+      </div>
+      <div>
+        <div class="team-name">
+          <span class="team-role">代表カウンセラー</span>
+          <span class="h3"><span class="ph">{{代表者氏名}}</span></span>
+        </div>
+        <div class="stack">
+          <p>婚活では、本人に悪気がなくても、話し方や距離の取り方が、相手に意図と異なる印象を与えることがあります。</p>
+          <p>当相談所では、男性側の考えだけで判断せず、女性側から見た印象も含めて、具体的にフィードバックします。</p>
+          <p>人格や性格を否定するのではなく、行動がどのように受け取られた可能性があるかを一緒に整理します。</p>
+        </div>
+        <dl class="def">
+          <div><dt>経歴</dt><dd><span class="ph-block">{{代表者経歴}}</span></dd></div>
+          <div><dt>資格</dt><dd><span class="ph-block">{{代表者資格}}</span></dd></div>
+          <div><dt>メッセージ</dt><dd><span class="ph-block">{{代表者メッセージ}}</span></dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <hr style="border:0;border-top:1px solid var(--line);margin:56px 0">
+
+    <div class="split split--rev reveal">
+      <div class="split__media">
+        <div class="ph-photo">{{柴沼氏写真}}<br>（プログラム設計責任者の顔写真）</div>
+      </div>
+      <div>
+        <div class="team-name">
+          <span class="team-role">プログラム設計責任者・メインコーチ</span>
+          <span class="h3"><span class="ph">{{柴沼氏正式氏名}}</span></span>
+        </div>
+        <h3 style="margin-bottom:16px">問題を分解し、次の行動へ落とし込む。</h3>
+        <div class="stack">
+          <p>恋愛・婚活支援を24名に提供し、13名が交際を開始した支援経験を持ちます。</p>
+          <p>顧客の問題を分解し、練習、実践、振り返りを通じて、次の具体的な行動を設計します。</p>
+          <p class="note">上記は過去の恋愛・婚活支援における実績です。IBJ会員に限定した実績ではなく、成婚実績ではありません。</p>
+        </div>
+        <dl class="def">
+          <div><dt>肩書</dt><dd><span class="ph-block">{{柴沼氏正式肩書}}</span></dd></div>
+          <div><dt>経歴</dt><dd><span class="ph-block">{{柴沼氏経歴}}</span></dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     料金
+     ========================================================== -->
+<section class="sec bg-white" id="pricing">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">料金</p>
+      <h2>料金とサポート内容</h2>
+    </div>
+
+    <div class="price reveal">
+      <div class="price__head">
+        <p class="price__plan">STANDARD</p>
+        <h3>スタンダードプラン</h3>
+      </div>
+
+      <div class="price__rows">
+        <div class="price__row">
+          <p class="price__k">初期費用</p>
+          <p class="price__v"><b class="num">165,000</b><span>円</span><small>（税込）</small></p>
+        </div>
+        <div class="price__row">
+          <p class="price__k">月会費</p>
+          <p class="price__v"><b class="num">28,000</b><span>円</span><small>（税込）</small></p>
+        </div>
+        <div class="price__row">
+          <p class="price__k">成婚料</p>
+          <p class="price__v"><b class="num">275,000</b><span>円</span><small>（税込）</small></p>
+        </div>
+      </div>
+
+      <div class="price__total">
+        <p class="t-k">活動12か月の場合の参考総額</p>
+        <p class="t-v"><b class="num">776,000</b><span>円</span><small>（税込）</small></p>
+        <p class="price__calc">
+          計算：165,000円 ＋ 28,000円 &times; 12か月 ＋ 275,000円<br>
+          活動期間によって総額は変わります。上記は12か月で成婚に至った場合の参考額です。
+        </p>
+      </div>
+
+      <div class="price__body">
+        <h3>含まれる支援</h3>
+        <ul class="incl">
+          <li>婚活方針の整理</li>
+          <li>相手像の整理</li>
+          <li>プロフィール作成・改善</li>
+          <li>服装・身だしなみのアドバイス</li>
+          <li>お見合い、初回デートの振り返り</li>
+          <li>会話、LINEの改善支援</li>
+          <li>定期面談</li>
+          <li>活動状況に応じた次の行動の具体化</li>
+        </ul>
+
+        <h3 style="margin-top:36px">支援の範囲（確定後に記載）</h3>
+        <dl class="def">
+          <div><dt>定期面談</dt><dd><span class="ph">{{月あたりの面談回数}}</span></dd></div>
+          <div><dt>LINE・チャット相談</dt><dd><span class="ph">{{相談可能範囲}}</span></dd></div>
+          <div><dt>返信目安</dt><dd><span class="ph">{{返信時間}}</span></dd></div>
+          <div><dt>お見合い練習</dt><dd><span class="ph">{{回数または条件}}</span></dd></div>
+          <div><dt>デート振り返り</dt><dd><span class="ph">{{実施方法}}</span></dd></div>
+          <div><dt>追加料金</dt><dd><span class="ph">{{追加料金条件}}</span></dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="cta-block reveal">
+      <a class="btn" href="{{予約URL}}" data-cta="cta_pricing">
+        料金と自分に合う支援内容を無料相談で確認する<i class="arw" aria-hidden="true"></i>
+      </a>
+      <p class="note micro">金額や内容を確認したうえで、ご判断ください。無理な勧誘は行いません。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     向いている人・向いていない人
+     ========================================================== -->
+<section class="sec bg-gray" id="fit">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">相性</p>
+      <h2>向いている方・向いていない方を、<br>正直にお伝えします。</h2>
+    </div>
+
+    <div class="fit reveal">
+      <div class="fit__col fit--yes">
+        <div class="fit__head">
+          <span class="fit__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </span>
+          <h3>向いている方</h3>
+        </div>
+        <ul>
+          <li>会えても次につながらない原因を整理したい</li>
+          <li>抽象論ではなく、具体的な改善案が欲しい</li>
+          <li>一人での振り返りに限界を感じている</li>
+          <li>フィードバックを受け、行動を変える意思がある</li>
+          <li>結婚相手と誠実な関係を築きたい</li>
+        </ul>
+      </div>
+
+      <div class="fit__col fit--no">
+        <div class="fit__head">
+          <span class="fit__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+          </span>
+          <h3>向いていない方</h3>
+        </div>
+        <ul>
+          <li>出会いの数だけを増やしたい</li>
+          <li>自分の行動を一切変えたくない</li>
+          <li>短期間で魔法のような結果を期待している</li>
+          <li>女性を攻略する方法だけを求めている</li>
+          <li>交際や成婚の保証を求めている</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="prose center mx-auto reveal" style="margin-top:36px">
+      <p style="font-weight:700;color:var(--navy-deep)">合う・合わないも含め、無料相談で率直にお伝えします。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     無料婚活ボトルネック診断
+     ========================================================== -->
+<section class="sec bg-navy on-dark" id="consult">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal">
+        <p class="eyebrow">無料相談</p>
+        <h2>まずは、今の婚活を<br>30分で見える化しませんか。</h2>
+
+        <ol class="steps-num" style="margin-top:36px">
+          <li>
+            <h3>現在の詰まりポイント</h3>
+            <p>お見合い、会話、LINE、デート、仮交際等、どの段階で止まっているかを整理します。</p>
+          </li>
+          <li>
+            <h3>優先して変える行動</h3>
+            <p>一度にすべてを変えず、最初に取り組むべきことを明確にします。</p>
+          </li>
+          <li>
+            <h3>次の一手</h3>
+            <p>無料相談後に何を実行するかを、具体的な行動に落とし込みます。</p>
+          </li>
+        </ol>
+
+        <div class="gift" data-gift hidden>
+          <span class="gift__tag">参加特典</span>
+          <h3>婚活ボトルネック診断レポート</h3>
+          <ul>
+            <li>現状の課題</li>
+            <li>優先順位</li>
+            <li>次の一手</li>
+          </ul>
+          <p class="note" style="margin-top:10px">これらを1枚に整理してお渡しします。</p>
+        </div>
+
+        <div style="margin-top:36px">
+          <a class="btn" href="{{予約URL}}" data-cta="cta_consult">
+            30分の無料婚活ボトルネック診断を予約する<i class="arw" aria-hidden="true"></i>
+          </a>
+          <ul class="tick">
+            <li>オンライン対応</li>
+            <li>全国から相談可能</li>
+            <li>相談だけでも可</li>
+            <li>入会を前提としない</li>
+            <li>無理な勧誘なし</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="split__media reveal">
+        <img src="images/consultation.webp" width="395" height="385" loading="lazy" decoding="async"
+             alt="男性相談者と向き合って話を聞く女性カウンセラー" style="border-radius:var(--card-r)">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     FAQ
+     ========================================================== -->
+<section class="sec bg-white" id="faq">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <p class="eyebrow" style="margin-inline:auto">よくある質問</p>
+      <h2>ご相談前に、よくいただく質問</h2>
+    </div>
+
+    <div class="faq reveal">
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="fa1" id="fq1">
+          <span class="q" aria-hidden="true">Q1</span>
+          <span>無料相談だけでも大丈夫ですか？</span>
+          <span class="ico" aria-hidden="true"></span>
+        </button></h3>
+        <div class="faq__a" id="fa1" role="region" aria-labelledby="fq1" data-open="false">
+          <p>はい。無料相談は、入会を前提に話を聞く場ではありません。</p>
+          <p>現在の婚活でどこが止まっているか、何を変えるべきか、そもそもサポートが必要かを整理する時間です。</p>
+          <p>相談後に入会しない判断をしても問題ありません。</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="fa2" id="fq2">
+          <span class="q" aria-hidden="true">Q2</span>
+          <span>恋愛経験が少なくても大丈夫ですか？</span>
+          <span class="ico" aria-hidden="true"></span>
+        </button></h3>
+        <div class="faq__a" id="fa2" role="region" aria-labelledby="fq2" data-open="false">
+          <p>はい。これまでの経験量よりも、これから行動を整理し、実践できるかを重視しています。</p>
+          <p>会話、LINE、デート等を具体的な行動に分けて支援します。</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="fa3" id="fq3">
+          <span class="q" aria-hidden="true">Q3</span>
+          <span>厳しくダメ出しされませんか？</span>
+          <span class="ico" aria-hidden="true"></span>
+        </button></h3>
+        <div class="faq__a" id="fa3" role="region" aria-labelledby="fq3" data-open="false">
+          <p>人格や性格を否定することはありません。</p>
+          <p>この行動は相手からどのように見えた可能性があるかを整理し、次にどう行動するかを一緒に考えます。</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="fa4" id="fq4">
+          <span class="q" aria-hidden="true">Q4</span>
+          <span>どのくらいの頻度で面談しますか？</span>
+          <span class="ico" aria-hidden="true"></span>
+        </button></h3>
+        <div class="faq__a" id="fa4" role="region" aria-labelledby="fq4" data-open="false">
+          <p><span class="ph">{{正式な面談頻度}}</span></p>
+          <p>活動状況や課題に応じて、必要なタイミングで振り返りを行います。</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="fa5" id="fq5">
+          <span class="q" aria-hidden="true">Q5</span>
+          <span>全国から利用できますか？</span>
+          <span class="ico" aria-hidden="true"></span>
+        </button></h3>
+        <div class="faq__a" id="fa5" role="region" aria-labelledby="fq5" data-open="false">
+          <p>オンライン対応のため、全国から相談できます。</p>
+          <p>対面での対応エリア：<span class="ph">{{対面対応エリア}}</span></p>
+        </div>
+      </div>
+
+      <div class="faq__item" data-ibj hidden>
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="fa6" id="fq6">
+          <span class="q" aria-hidden="true">Q6</span>
+          <span>IBJの会員を紹介してもらえますか？</span>
+          <span class="ico" aria-hidden="true"></span>
+        </button></h3>
+        <div class="faq__a" id="fa6" role="region" aria-labelledby="fq6" data-open="false">
+          <p><span class="ph">{{IBJ加盟後の正式回答}}</span></p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="fa7" id="fq7">
+          <span class="q" aria-hidden="true">Q7</span>
+          <span>交際や成婚は保証されますか？</span>
+          <span class="ico" aria-hidden="true"></span>
+        </button></h3>
+        <div class="faq__a" id="fa7" role="region" aria-labelledby="fq7" data-open="false">
+          <p>交際や成婚を保証するサービスではありません。</p>
+          <p>一人ひとりの課題を整理し、行動を改善するための支援を提供します。結果には個人差があります。</p>
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="fa8" id="fq8">
+          <span class="q" aria-hidden="true">Q8</span>
+          <span>他の結婚相談所との違いは何ですか？</span>
+          <span class="ico" aria-hidden="true"></span>
+        </button></h3>
+        <div class="faq__a" id="fa8" role="region" aria-labelledby="fq8" data-open="false">
+          <p>出会いの提供だけでなく、会話、LINE、デート等を具体的に振り返り、次に変える行動を明確にする点です。</p>
+          <p>診断、練習、実践、振り返りを繰り返し、関係構築力の改善を支援します。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     最終CTA
+     ========================================================== -->
+<section class="sec bg-pale" id="final">
+  <div class="wrap final">
+    <div class="reveal">
+      <h2>今の婚活を、<br>感覚のまま続けない。</h2>
+      <div class="stack" style="margin-top:24px">
+        <p>うまくいかなかった理由が分からないままでは、次の出会いでも同じところで止まる可能性があります。</p>
+        <p>まずは30分で、現在の課題と次の一手を整理しましょう。</p>
+      </div>
+      <div style="margin-top:32px">
+        <a class="btn" href="{{予約URL}}" data-cta="cta_final">
+          30分の無料婚活ボトルネック診断を予約する<i class="arw" aria-hidden="true"></i>
+        </a>
+        <ul class="trust" style="margin-top:20px">
+          <li>オンライン対応</li>
+          <li>無理な勧誘なし</li>
+          <li>相談だけでも可</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="final__media reveal">
+      <img src="images/counselor-walking.webp" width="627" height="782" loading="lazy" decoding="async"
+           alt="ネイビーのスーツを着て街を歩く女性代表カウンセラー">
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ==========================================================
+     FOOTER
+     ========================================================== -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft__top">
+      <div>
+        <p class="ft__logo">
+          <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1F3A5F"/><path d="M9 20.5c2.6-7 10.4-7 13 0" stroke="#D5A62F" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
+          <span>{{サービス名}}</span>
+        </p>
+        <p style="line-height:1.8">出会いを、関係に変える。<br>会えているのに次につながらない原因を見える化し、練習と実践で改善する関係構築型の婚活支援です。</p>
+      </div>
+
+      <div>
+        <div class="ft__links">
+          <a href="{{運営会社URL}}">運営会社</a>
+          <a href="{{プライバシーポリシーURL}}">プライバシーポリシー</a>
+          <a href="{{特定商取引法URL}}">特定商取引法に基づく表記</a>
+          <a href="{{利用規約URL}}">利用規約</a>
+          <a href="{{予約URL}}" data-cta="cta_footer">お問い合わせ</a>
+        </div>
+        <dl class="ft__info">
+          <div><dt>運営会社</dt><dd><span class="ph">{{運営会社名}}</span></dd></div>
+          <div><dt>代表者</dt><dd><span class="ph">{{代表者名}}</span></dd></div>
+          <div><dt>所在地</dt><dd><span class="ph">{{所在地}}</span></dd></div>
+          <div><dt>電話番号</dt><dd><span class="ph">{{電話番号}}</span></dd></div>
+          <div><dt>メール</dt><dd><span class="ph">{{メールアドレス}}</span></dd></div>
+          <div><dt>営業時間</dt><dd><span class="ph">{{営業時間}}</span></dd></div>
+          <div><dt>定休日</dt><dd><span class="ph">{{定休日}}</span></dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <p class="ft__note">
+      掲載している実績は、過去の恋愛・婚活支援における件数です。IBJ会員に限定した実績ではなく、成婚実績ではありません。
+      交際・成婚を保証するものではなく、結果には個人差があります。料金は税込表示です。活動期間により総額は変動します。
+    </p>
+    <p class="ft__copy">&copy; <span class="num">2026</span> {{運営会社名}}</p>
+  </div>
+</footer>
+
+<!-- ==========================================================
+     MOBILE STICKY CTA
+     ========================================================== -->
+<div class="sticky">
+  <a class="btn" href="{{予約URL}}" data-cta="cta_mobile_sticky">無料診断を予約する</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"無料相談だけでも大丈夫ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。無料相談は、入会を前提に話を聞く場ではありません。現在の婚活でどこが止まっているか、何を変えるべきか、そもそもサポートが必要かを整理する時間です。相談後に入会しない判断をしても問題ありません。"}},
+    {"@type":"Question","name":"恋愛経験が少なくても大丈夫ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。これまでの経験量よりも、これから行動を整理し、実践できるかを重視しています。会話、LINE、デート等を具体的な行動に分けて支援します。"}},
+    {"@type":"Question","name":"厳しくダメ出しされませんか？","acceptedAnswer":{"@type":"Answer","text":"人格や性格を否定することはありません。この行動は相手からどのように見えた可能性があるかを整理し、次にどう行動するかを一緒に考えます。"}},
+    {"@type":"Question","name":"交際や成婚は保証されますか？","acceptedAnswer":{"@type":"Answer","text":"交際や成婚を保証するサービスではありません。一人ひとりの課題を整理し、行動を改善するための支援を提供します。結果には個人差があります。"}},
+    {"@type":"Question","name":"他の結婚相談所との違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"出会いの提供だけでなく、会話、LINE、デート等を具体的に振り返り、次に変える行動を明確にする点です。診断、練習、実践、振り返りを繰り返し、関係構築力の改善を支援します。"}}
+  ]
+}
+</script>
+
+<script>
+/* ============================================================================
+   LP_CONFIG ─ 公開前に、ここだけを書き換えてください
+   ============================================================================ */
+var LP_CONFIG = {
+  /* 予約ページのURL。HTML内の {{予約URL}} も同時に置換してください */
+  bookingUrl: '{{予約URL}}',
+
+  /* IBJ加盟契約が完了したら true。false の間は
+     ヒーローのIBJラベル / IBJセクション / FAQ Q6 が非表示になります */
+  ibjMember: false,
+
+  /* 「33項目×5段階」の評価表を正式運用している場合のみ true */
+  showRatingScale: false,
+
+  /* 診断レポートを実際にお渡しできる場合のみ true */
+  showBonusReport: false
+};
+
+/* 事例カード：5〜10件まで追加できます。
+   consent:true（掲載許可あり）のカードだけが表示されます。
+   comment は空文字なら非表示になります（架空のコメントは入れないでください） */
+var CASES = [
+  {
+    who: '30歳・会社員',
+    anonymous: true,
+    before: 'これまで交際経験がなく、どのような相手と合うかも分からなかった。',
+    action: '価値観と結婚生活の希望を整理し、プロフィールと行動方針を具体化した。',
+    after: '目指す相手像と行動が明確になり、自然な形で交際を開始した。',
+    comment: '',
+    consent: true
+  },
+  {
+    who: 'マッチングはするが、初回デートで終わっていた方',
+    anonymous: true,
+    before: 'デート後に連絡が続かず、原因が分からなかった。',
+    action: '会話内容を振り返り、質問、自己開示、温度感の合わせ方を練習した。',
+    after: '複数回のデートにつながるようになり、初めて交際関係に進んだ。',
+    comment: '',
+    consent: true
+  },
+  {
+    who: '29歳・会社員',
+    anonymous: true,
+    before: '過去に一度交際経験があったが、その後は同じところでつまずいていた。',
+    action: '行動パターンを整理し、デートから気持ちを伝えるまでの流れを練習した。',
+    after: '相手との関係を落ち着いて深め、自分の気持ちを伝えられる状態になった。',
+    comment: '',
+    consent: true
+  }
+];
+
+(function () {
+  'use strict';
+  var d = document;
+  d.documentElement.classList.add('js-anim');
+
+  /* ---------- 計測 ------------------------------------------------------- */
+  function track(name, params) {
+    var payload = Object.assign({ event: name }, params || {});
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(payload);
+    if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
+  }
+
+  /* ---------- 予約URL（UTM引き継ぎ） -------------------------------------- */
+  var KEEP = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid','twclid','ttclid','yclid'];
+  var incoming = new URLSearchParams(location.search);
+  var carry = new URLSearchParams();
+  KEEP.forEach(function (k) { if (incoming.get(k)) carry.set(k, incoming.get(k)); });
+
+  var raw = LP_CONFIG.bookingUrl || '';
+  var isSet = raw && raw.indexOf('{{') === -1;
+  if (!isSet) {
+    console.warn('[LP] 予約URLが未設定です。LP_CONFIG.bookingUrl と HTML内の {{予約URL}} を置き換えてください。');
+  }
+
+  function buildUrl(ctaName) {
+    if (!isSet) return '#consult';
+    try {
+      var u = new URL(raw, location.href);
+      carry.forEach(function (v, k) { u.searchParams.set(k, v); });
+      u.searchParams.set('lp_cta', ctaName || 'unknown');
+      return u.toString();
+    } catch (e) { return raw; }
+  }
+
+  Array.prototype.forEach.call(d.querySelectorAll('[data-cta]'), function (a) {
+    var name = a.getAttribute('data-cta');
+    a.href = buildUrl(name);
+    if (isSet) { a.rel = 'noopener'; }
+    a.addEventListener('click', function () {
+      track(name, { cta_location: name, page_path: location.pathname });
+    });
+  });
+
+  /* ---------- 条件付き表示 ------------------------------------------------ */
+  function toggle(sel, on) {
+    Array.prototype.forEach.call(d.querySelectorAll(sel), function (el) { el.hidden = !on; });
+  }
+  toggle('[data-ibj]', !!LP_CONFIG.ibjMember);
+  toggle('[data-rating]', !!LP_CONFIG.showRatingScale);
+  toggle('[data-gift]', !!LP_CONFIG.showBonusReport);
+
+  var qn = 1;
+  Array.prototype.forEach.call(d.querySelectorAll('.faq__item'), function (item) {
+    if (item.hidden) return;
+    var q = item.querySelector('.faq__q .q');
+    if (q) q.textContent = 'Q' + (qn++);
+  });
+
+  /* ---------- ハンバーガー ----------------------------------------------- */
+  var burger = d.querySelector('.hd__burger');
+  var mnav = d.getElementById('mnav');
+  if (burger && mnav) {
+    burger.addEventListener('click', function () {
+      var open = burger.getAttribute('aria-expanded') === 'true';
+      burger.setAttribute('aria-expanded', String(!open));
+      burger.setAttribute('aria-label', !open ? 'メニューを閉じる' : 'メニューを開く');
+      mnav.setAttribute('data-open', String(!open));
+    });
+    mnav.addEventListener('click', function (e) {
+      if (e.target instanceof Element && e.target.closest('a')) {
+        burger.setAttribute('aria-expanded', 'false');
+        mnav.setAttribute('data-open', 'false');
+      }
+    });
+    d.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && mnav.getAttribute('data-open') === 'true') {
+        burger.setAttribute('aria-expanded', 'false');
+        mnav.setAttribute('data-open', 'false');
+        burger.focus();
+      }
+    });
+  }
+
+  /* ---------- FAQ アコーディオン ----------------------------------------- */
+  Array.prototype.forEach.call(d.querySelectorAll('.faq__q'), function (btn) {
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      var panel = d.getElementById(btn.getAttribute('aria-controls'));
+      btn.setAttribute('aria-expanded', String(!open));
+      if (panel) panel.setAttribute('data-open', String(!open));
+      if (!open) track('faq_open', { faq_question: btn.textContent.trim().replace(/\s+/g, ' ') });
+    });
+  });
+
+  /* ---------- 事例カード -------------------------------------------------- */
+  var track_ = d.getElementById('casesTrack');
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) {
+    return ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' })[c];
+  }); }
+
+  if (track_) {
+    var list = CASES.filter(function (c) { return c.consent; }).slice(0, 10);
+    track_.innerHTML = list.map(function (c) {
+      return '<li class="card">' +
+        '<div class="case__meta">' +
+          '<span class="case__avatar" aria-hidden="true">' +
+            '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="3.6"/><path d="M4.8 20a7.2 7.2 0 0 1 14.4 0"/></svg>' +
+          '</span>' +
+          '<span class="case__who">' + esc(c.who) + '</span>' +
+        '</div>' +
+        '<div class="case__block"><span class="case__k">活動前</span><p>' + esc(c.before) + '</p></div>' +
+        '<div class="case__block"><span class="case__k">取り組んだこと</span><p>' + esc(c.action) + '</p></div>' +
+        '<div class="case__block"><span class="case__k">変化</span><p>' + esc(c.after) + '</p></div>' +
+        (c.comment ? '<p class="case__quote">' + esc(c.comment) + '</p>' : '') +
+      '</li>';
+    }).join('');
+
+    var prev = d.querySelector('.cases__nav .prev');
+    var next = d.querySelector('.cases__nav .next');
+    function step() {
+      var first = track_.querySelector('li');
+      return first ? first.getBoundingClientRect().width + 20 : 320;
+    }
+    function sync() {
+      if (!prev || !next) return;
+      var max = track_.scrollWidth - track_.clientWidth - 2;
+      prev.disabled = track_.scrollLeft <= 2;
+      next.disabled = track_.scrollLeft >= max;
+      var hide = max <= 2;
+      var nav = d.querySelector('.cases__nav');
+      if (nav) nav.style.visibility = hide ? 'hidden' : 'visible';
+    }
+    if (prev) prev.addEventListener('click', function () { track_.scrollBy({ left: -step(), behavior: 'smooth' }); });
+    if (next) next.addEventListener('click', function () { track_.scrollBy({ left: step(), behavior: 'smooth' }); });
+    track_.addEventListener('scroll', sync, { passive: true });
+    window.addEventListener('resize', sync);
+    sync();
+  }
+
+  /* ---------- スクロール表示 ---------------------------------------------- */
+  var targets = d.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    Array.prototype.forEach.call(targets, function (el) { el.classList.add('is-visible'); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+    Array.prototype.forEach.call(targets, function (el) { io.observe(el); });
+  }
+
+  /* ---------- ページ内アンカー -------------------------------------------- */
+  d.addEventListener('click', function (e) {
+    if (!(e.target instanceof Element)) return;
+    var a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!id) return;
+    var el = d.getElementById(id);
+    if (!el) return;
+    e.preventDefault();
+    el.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+    if (el.tabIndex < 0) el.tabIndex = -1;
+    el.focus({ preventScroll: true });
+  });
+})();
+</script>
+</body>
+</html>
