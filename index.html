@@ -587,6 +587,13 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
 @media (min-width:768px){ .cred__story h3{font-size:18px} }
 .cred__story p{font-size:15px;line-height:1.9;color:#D5E2EE}
 
+.stat-note{
+  margin-bottom:28px;padding:18px 22px;border-radius:12px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);
+  font-size:15px;line-height:1.85;color:#D5E2EE;
+}
+.stat-note b{color:var(--gold)}
+
 .spot{
   margin-top:30px;padding:24px 22px;border-radius:var(--card-r);
   background:rgba(213,166,47,.14);border:1px solid rgba(213,166,47,.55);text-align:center;
@@ -705,12 +712,21 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
 @media (min-width:768px){ .price__head{padding:30px 34px} }
 .price__plan{font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--navy-mid);margin-bottom:6px}
 .price__rows{display:grid;gap:0}
-@media (min-width:768px){ .price__rows{grid-template-columns:repeat(3,1fr)} }
 .price__row{padding:20px 24px;border-bottom:1px solid var(--line)}
+.price__row:last-child{border-bottom:0}
 @media (min-width:768px){
-  .price__row{padding:26px 34px;border-bottom:0;border-right:1px solid var(--line)}
+  .price__rows{grid-template-columns:repeat(2,1fr)}
+  .price__row{padding:24px 30px;border-right:1px solid var(--line)}
+  .price__row:nth-child(2n){border-right:0}
+  .price__row:nth-child(n+3){border-bottom:0}
+}
+@media (min-width:1024px){
+  .price__rows{grid-template-columns:repeat(4,1fr)}
+  .price__row{padding:26px 22px;border-bottom:0;border-right:1px solid var(--line)}
+  .price__row:nth-child(2n){border-right:1px solid var(--line)}
   .price__row:last-child{border-right:0}
 }
+.price__sub{margin-top:8px;font-size:12.5px;line-height:1.6;color:var(--t-sub)}
 .price__k{font-size:14px;font-weight:700;color:var(--navy-mid);margin-bottom:8px}
 .price__v{display:flex;align-items:baseline;gap:4px;color:var(--navy-deep)}
 .price__v b{font-family:var(--font-en);font-size:30px;font-weight:700;line-height:1.1}
@@ -837,6 +853,13 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
 .ft__info > div{display:flex;gap:14px;padding:7px 0;line-height:1.7}
 .ft__info dt{flex:none;width:76px;color:#8FA6BB;font-size:13px;padding-top:2px}
 .ft__info dd{margin:0}
+.ft__base{
+  display:flex;align-items:flex-start;gap:10px;
+  margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);
+  font-size:14px;line-height:1.8;color:#C3D2DF;
+}
+.ft__base svg{flex:none;margin-top:4px;color:var(--gold)}
+.ft__base b{display:block;font-size:12.5px;font-weight:700;letter-spacing:.06em;color:#8FA6BB;margin-bottom:4px}
 .ft__links{display:flex;flex-wrap:wrap;gap:10px 24px;margin-bottom:22px}
 .ft__note{margin-top:34px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;line-height:1.8;color:#8FA6BB}
 .ft__copy{margin-top:18px;font-size:12.5px;color:#8FA6BB}
@@ -1287,7 +1310,7 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
     <div class="sec-head reveal">
       <p class="eyebrow">実績と、その裏づけ</p>
       <h2>男性向け育成プログラムで、<br>20数名を個別に指導してきました。</h2>
-      <p>アコード結婚相談所を開く前、代表はマッチングアプリ運営会社で、男性向けの婚活育成プログラムを提供していました。13か月間で20数名を個別に指導し、その半数以上が交際に至っています。ここでの手順を、そのまま結婚相談所の支援に持ち込んでいます。</p>
+      <p>アコード結婚相談所を開く前、代表は婚活サービスの運営会社で、男性向けの育成プログラムに携わっていました。13か月間で20数名を個別に指導し、その半数以上が交際に至っています。そこで積み上げた知見をもとに、結婚相談所向けにあらためて設計し直したのが、いまのプログラムです。</p>
     </div>
 
     <div class="stats reveal">
@@ -1301,20 +1324,22 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
       </div>
     </div>
 
+    <p class="stat-note reveal">対象は、<b>交際経験がまったくない、またはほとんどない28歳から44歳の男性</b>でした。何もない状態からのスタートで、半数以上が交際に至っています。</p>
+
     <div class="cred reveal">
       <p class="cred__label">このプログラムを設計したのは、こんな人間です</p>
       <ol class="cred__story">
         <li>
+          <h3>婚活サービスの運営会社で、男性向け育成プログラムの責任者を務めました。</h3>
+          <p>男性向けの育成プログラムをゼロから設計し、事業の責任者として指導にあたりました。13か月間で20数名を個別に指導し、半数以上が交際に至っています。そこで積み上げた知見が、いまのプログラムの原型になっています。</p>
+        </li>
+        <li>
           <h3>リクルートで、課題を分解する仕事をしていました。</h3>
-          <p>株式会社リクルートの経営企画部門で、事業の課題を分解し、実行できる形に落とし込む仕事に取り組んできました。その考え方が、婚活支援の手順づくりの土台になっています。</p>
+          <p>株式会社リクルートの経営企画部門で、事業の課題を分解し、実行できる形に落とし込む仕事に取り組んできました。婚活を感覚論で終わらせず、手順に落とし込む考え方は、ここで身につけたものです。</p>
         </li>
         <li>
           <h3>自身も、結婚相談所で妻と出会いました。</h3>
-          <p>婚活を経験した当事者です。理想の結婚をどう実現したかについて、日本経済新聞社グループが発行する日経WOMANに記事が掲載されました。相談者と同じ道を通ってきたからこそ、どこでつまずくかが分かります。</p>
-        </li>
-        <li>
-          <h3>マッチングアプリ運営会社で、男性向け育成プログラムの責任者を務めました。</h3>
-          <p>男性向けの婚活育成プログラムをゼロから設計し、事業の責任者として指導にあたりました。13か月間で20数名を個別に指導し、半数以上が交際に至っています。そこで確かめた手順を、いまアコード結婚相談所で提供しています。</p>
+          <p>婚活を経験した当事者です。理想の結婚をどう実現したかについて、日本経済新聞社グループが発行する日経WOMANに記事が掲載されています。相談者と同じ道を通ってきたからこそ、どこでつまずくかが分かります。</p>
         </li>
       </ol>
     </div>
@@ -1346,7 +1371,7 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
     </div>
 
     <div class="prose stack reveal" style="margin-top:8px">
-      <p>交際経験がまったくない方も、交際経験が一度だけという方も、交際に至っています。中にはご結婚された方もいます。</p>
+      <p>交際経験が一度だけという方も、交際に至っています。中には、その後ご結婚された方もいます。</p>
     </div>
 
     <div class="spot reveal">
@@ -1356,7 +1381,7 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
       </a>
     </div>
 
-    <p class="note reveal" style="margin-top:22px;max-width:var(--prose)">※ アコード結婚相談所の開業前に、マッチングアプリ運営会社で提供していた男性向け育成プログラムでの個別指導実績です。結果には個人差があり、交際・成婚を保証するものではありません。</p>
+    <p class="note reveal" style="margin-top:22px;max-width:var(--prose)">※ アコード結婚相談所の開業前に、婚活サービスの運営会社で提供していた男性向け育成プログラムでの個別指導実績です。結果には個人差があり、交際・成婚を保証するものではありません。</p>
   </div>
 </section>
 
@@ -1422,10 +1447,11 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
     </div>
 
     <div class="price-why reveal">
-      <h3>初期費用は、他社と比べて高めです。<br>理由があります。</h3>
+      <h3>初期費用も月会費も、<br>他社と比べて高めです。理由があります。</h3>
       <p>登録して活動を始めるだけなら、初期費用はもっと下げられます。ただそれでは、写真もプロフィールも服装も整わないまま、お見合いを申し込むことになります。申し込みが通らない状態で、月会費だけが積み上がっていきます。</p>
-      <p>アコード結婚相談所では、活動を始める前に、プロによる服装選びと購入店の提案、プロカメラマンによる写真撮影、プロフィール作成、模擬お見合いまでを済ませます。<b>最初の数か月で「会って好感を持ってもらえる状態」をつくりきるための費用です。</b></p>
-      <p>これらはすべて初期費用に含まれ、オプション料金はかかりません。</p>
+      <p>アコード結婚相談所では、活動を始める前に、プロによる服装選びと購入店の提案、プロカメラマンによる写真撮影、プロフィール作成、模擬お見合いまでを済ませます。<b>最初の数か月で「会って好感を持ってもらえる状態」をつくりきるための費用です。</b>これらはすべて初期費用に含まれます。</p>
+      <p>月会費も、平均と比べれば少し高めです。理由は、<b>月会費に含まれる支援の量</b>です。月1回以上の面談に加えて、模擬お見合いと採点、LINE・メッセージの文面チェック、女性スタッフとの会話練習まで、すべて月会費の中で行います。</p>
+      <p>基本となる費用は、次の4つです。</p>
     </div>
 
     <div class="price reveal">
@@ -1444,8 +1470,14 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
           <p class="price__v"><b class="num">28,000</b><span>円</span><small>（税込）</small></p>
         </div>
         <div class="price__row">
+          <p class="price__k">お見合い料</p>
+          <p class="price__v"><b class="num">0</b><span>円</span></p>
+          <p class="price__sub">月<span class="num">50</span>件まで。会うたびに費用が増えることはありません。</p>
+        </div>
+        <div class="price__row">
           <p class="price__k">成婚料</p>
           <p class="price__v"><b class="num">275,000</b><span>円</span><small>（税込）</small></p>
+          <p class="price__sub">ご成婚が決まったときのみ</p>
         </div>
       </div>
 
@@ -1455,7 +1487,7 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
         <p class="price__calc">
           計算：165,000円 ＋ 28,000円 &times; 6か月 ＋ 275,000円<br>
           活動期間によって総額は変わります。上記は6か月で成婚に至った場合の参考額です。<br>
-          <b>成婚料は、ご成婚が決まったときのみ発生します。活動中の追加費用はありません。</b>
+          <b>お見合いのたびに費用が発生することはありません。</b>
         </p>
       </div>
 
@@ -1464,7 +1496,7 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
         <ul class="incl">
           <li>婚活方針と、求める相手像の具体化</li>
           <li>お見合いが組めるプロフィール文の作成・改善</li>
-          <li class="star">プロによる服装選びと、購入店の提案（同行）</li>
+          <li class="star">プロによる服装選びと、購入店の提案</li>
           <li class="star">プロカメラマンによるプロフィール写真の撮影</li>
           <li>お見合いの申込み方針と優先順位の設計</li>
           <li>模擬お見合いと、33項目の採点フィードバック</li>
@@ -1473,7 +1505,7 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
           <li>次のデートにつながる誘い方と当日の流れの設計</li>
           <li>活動状況に応じた次の行動の具体化</li>
         </ul>
-        <p class="incl-note"><b>★</b>は活動開始前に実施し、初期費用に含まれます。追加料金はかかりません。</p>
+        <p class="incl-note"><b>★</b>は活動前・活動直後に実施し、初期費用に含まれます。追加料金はかかりません。</p>
 
         <h3 style="margin-top:36px">支援の範囲</h3>
         <dl class="def">
@@ -1483,7 +1515,7 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
         </dl>
 
         <h3 style="margin-top:36px">★の2つは、こう進めます</h3>
-        <p class="note-dark" style="margin-bottom:18px;max-width:var(--prose)">お見合いを申し込む前に、相手から見えるプロフィールと、実際に会ったときの第一印象を整えます。</p>
+        <p class="note-dark" style="margin-bottom:18px;max-width:var(--prose)">活動前から活動を始めた直後にかけて実施します。お見合いを本格的に申し込む前に、相手から見えるプロフィールと、実際に会ったときの第一印象を整えます。</p>
         <div class="opt">
           <div class="opt__item">
             <span class="opt__ico" aria-hidden="true">
@@ -1491,7 +1523,7 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
             </span>
             <div>
               <h4>プロによる服装選びと購入店の提案</h4>
-              <p>専門スタッフが同行し、体型や年齢、会う相手に合う服装を一緒に選びます。どの店で何を買うかまで決めきるので、当日そのまま着られる状態になります。</p>
+              <p>専門スタッフがヒアリングを行い、目指す方向性を決めたうえでご提案します。体型や年齢、会う相手に合う服装を一緒に選び、どの店で何を買うかまで具体化します。</p>
             </div>
           </div>
           <div class="opt__item">
@@ -1500,11 +1532,11 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
             </span>
             <div>
               <h4>プロフィール写真の撮影</h4>
-              <p>東京・丸の内周辺のスタジオで、専門カメラマンが撮影します。プロフィールに使う1枚を、服装の相談から一緒に仕上げます。</p>
+              <p>専門カメラマンが撮影します。撮影場所は東京駅または大阪駅の周辺です。プロフィールに使う1枚を、服装の相談から一緒に仕上げます。</p>
             </div>
           </div>
         </div>
-        <p class="note" style="margin-top:16px">いずれも初期費用（165,000円・税込）に含まれます。オプション料金はありません。</p>
+        <p class="note" style="margin-top:16px">いずれも初期費用（165,000円・税込）に含まれます。</p>
       </div>
     </div>
 
@@ -1798,6 +1830,11 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
           <span class="logo-txt"><b>アコード結婚相談所</b><i>ACCORD</i></span>
         </p>
         <p style="line-height:1.8">出会いを、関係に変える。<br>男性専門の結婚相談所です。会えない・続かない原因を見える化し、練習と実践で改善します。</p>
+
+        <p class="ft__base">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10.2c0 5.4-8 11.4-8 11.4s-8-6-8-11.4a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.8"/></svg>
+          <span><b>活動拠点</b>東京都千代田区・茨城県守谷市<br>（オンライン全国対応）</span>
+        </p>
       </div>
 
       <div>
@@ -1866,7 +1903,7 @@ var LP_CONFIG = {
    comment は空文字なら非表示になります（架空のコメントは入れないでください） */
 var CASES = [
   {
-    who: '30歳・会社員',
+    who: '29歳・会社員',
     situation: '交際経験がなく、相手選びから迷っていた方',
     before: 'これまで交際経験がなく、どのような女性と、どのような結婚生活を築きたいのかを言葉にできない状態でした。お見合いでも何を話せばよいか分からず、相手選びと行動の両方に迷いがありました。',
     action: '本人が大切にしたい価値観、生活スタイル、仕事や家庭に対する考え方を一つずつ整理し、求める相手像を明確にしました。その内容をプロフィールに反映するとともに、初回のお見合いで伝えること、相手に質問すること、会話の進め方を具体化しました。',
@@ -1884,7 +1921,7 @@ var CASES = [
     consent: true
   },
   {
-    who: '29歳・会社員',
+    who: '38歳・会社員',
     situation: '好意を伝えられず、関係が止まっていた方',
     before: '学生時代に一度だけ交際経験がありましたが、その後は交際に進めない状態が続いていました。気になる相手ができても、どのように距離を縮め、いつ次のデートに誘い、どの段階で好意を伝えればよいか分からず、関係が曖昧なまま終わっていました。',
     action: '過去のデートや連絡内容を振り返り、関係が止まりやすい場面と本人の行動パターンを整理しました。初回デート後の連絡、次回デートへの誘い方、質問と自己開示のバランス、相手の反応の受け止め方、好意を言葉にするまでの流れを、具体的な場面ごとに練習しました。',
