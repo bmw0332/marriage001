@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>男性専門の結婚相談所｜アコード結婚相談所</title>
-<meta name="description" content="男性専門の結婚相談所です。そもそも会えない、会えても次につながらない。IBJの会員ネットワークで結婚を考える相手との出会いを広げ、プロフィール・お見合い・LINE・デートを実践型プログラムで改善します。30分の無料相談をオンラインで実施しています。">
+<title>本番前に練習する婚活支援｜アコード結婚相談所</title>
+<meta name="description" content="実績のある実践型の婚活コーチングを行う結婚相談所です。そもそも会えない、会えても次につながらない。IBJの会員ネットワークで結婚を考える相手との出会いを広げ、プロフィール・お見合い・LINE・デートを実践型プログラムで改善します。30分の無料相談をオンラインで実施しています。">
 <link rel="canonical" href="{{公開URL}}">
 <meta name="robots" content="index, follow">
 
@@ -329,6 +329,7 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
   background:var(--gold-soft);color:var(--navy-deep);font-size:12.5px;font-weight:700;
 }
 .hero__label i{font-style:normal;color:var(--gold-hover);font-weight:700}
+.hero__label .lbl-r{display:inline-flex;align-items:center;gap:8px}
 .hero h1{margin-bottom:24px}
 .hero__sub{font-size:calc(var(--fs-body) + 1px);font-weight:500;color:var(--t-body);line-height:1.85}
 .hero__sub + .hero__sub{margin-top:14px}
@@ -549,11 +550,44 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
   margin-top:20px;padding:16px 18px;border-radius:12px;background:var(--white);
   border:1px solid var(--line);font-size:12.5px;line-height:1.8;color:var(--t-sub);
 }
-.bridge{
-  margin-top:26px;padding:20px 22px;border-radius:var(--card-r);
-  background:var(--navy-deep);color:var(--t-white);font-size:16px;font-weight:700;line-height:1.8;
+.eq{
+  margin-top:28px;padding:24px 20px;border-radius:var(--card-r);
+  background:var(--navy-deep);color:var(--t-white);
 }
-.bridge b{color:var(--gold)}
+@media (min-width:768px){ .eq{padding:28px 30px} }
+.eq__lead{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--gold-soft);margin-bottom:14px;
+}
+@media (min-width:768px){ .eq__lead{margin-bottom:18px} }
+.eq__lead i{font-style:normal;font-family:var(--font-en);font-size:17px;color:var(--gold)}
+
+.eq__row{display:grid;gap:6px}
+@media (min-width:768px){
+  .eq__row{display:flex;align-items:stretch;justify-content:center;gap:12px}
+}
+.eq__term{
+  display:flex;flex-direction:row;align-items:center;justify-content:center;gap:10px;
+  padding:12px 14px;border-radius:12px;text-align:center;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
+}
+@media (min-width:768px){
+  .eq__term{flex:1 1 0;min-width:0;flex-direction:column;gap:8px;padding:18px 14px}
+}
+.eq__term b{font-size:16px;font-weight:700;line-height:1.5;color:var(--t-white)}
+@media (min-width:768px){ .eq__term b{font-size:17px} }
+.eq__term span{
+  font-size:11.5px;font-weight:700;letter-spacing:.1em;color:var(--gold);
+  padding:2px 10px;border-radius:999px;background:rgba(213,166,47,.16);
+}
+.eq__x{
+  display:flex;align-items:center;justify-content:center;flex:none;line-height:1;
+  font-style:normal;font-family:var(--font-en);font-size:16px;font-weight:700;color:var(--gold);
+}
+.eq__note{
+  margin-top:16px;text-align:center;font-size:14.5px;line-height:1.8;color:#D5E2EE;
+}
+.eq__note b{color:var(--t-white)}
 
 .stats{display:grid;gap:16px;margin-bottom:36px}
 @media (min-width:640px){ .stats{grid-template-columns:1fr 1fr;gap:24px} }
@@ -946,7 +980,7 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
     </div>
 
     <div class="hero__copy">
-      <p class="hero__label" data-ibj hidden><b>IBJ正規加盟店</b><i aria-hidden="true">&times;</i>男性専門の結婚相談所</p>
+      <p class="hero__label" data-ibj hidden><b>IBJ正規加盟店</b><span class="lbl-r"><i aria-hidden="true">&times;</i>本番前に練習する婚活支援</span></p>
 
       <h1>なかなか会えない。<br>会えても、続かない。</h1>
 
@@ -1094,7 +1128,17 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
       <p>相手の結婚意思やプロフィール情報を一から確かめることに時間を使うのではなく、結婚を目指す相手との関係づくりに集中できる環境です。</p>
     </div>
 
-    <p class="bridge reveal"><b>IBJ</b>が出会いの機会を広げ、<b>アコード</b>が選ばれる準備と、会った後の関係づくりを支援します。</p>
+    <div class="eq reveal">
+      <p class="eq__lead">婚活の前進<i aria-hidden="true">＝</i></p>
+      <div class="eq__row">
+        <div class="eq__term"><b>出会いの機会</b><span>IBJ</span></div>
+        <i class="eq__x" aria-hidden="true">&times;</i>
+        <div class="eq__term"><b>選ばれるための準備</b><span>アコード</span></div>
+        <i class="eq__x" aria-hidden="true">&times;</i>
+        <div class="eq__term"><b>関係を育てる力</b><span>アコード</span></div>
+      </div>
+      <p class="eq__note">IBJが<b>出会いの機会</b>を広げ、アコードが<b>残りの2つ</b>を支援します。</p>
+    </div>
 
     <p class="src reveal">出典：IBJ公式サイト（<a href="https://www.ibjapan.jp/" target="_blank" rel="noopener">www.ibjapan.jp</a>）。登録会員数、加盟相談所数、お見合い成立数は2026年7月時点または同月実績。年間成婚者数は2025年実績。<br>ご利用いただける会員数やお見合い成立の可能性は、年齢、地域、希望条件等によって異なります。</p>
   </div>
@@ -1829,7 +1873,7 @@ h3,.h3{font-size:var(--fs-h3);font-weight:700;line-height:var(--lh-h3);color:var
           <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1F3A5F"/><path d="M9 20.5c2.6-7 10.4-7 13 0" stroke="#D5A62F" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>
           <span class="logo-txt"><b>アコード結婚相談所</b><i>ACCORD</i></span>
         </p>
-        <p style="line-height:1.8">出会いを、関係に変える。<br>男性専門の結婚相談所です。会えない・続かない原因を見える化し、練習と実践で改善します。</p>
+        <p style="line-height:1.8">出会いを、関係に変える。<br>実践型の婚活コーチングを行う結婚相談所です。会えない・続かない原因を見える化し、練習と実践で改善します。</p>
 
         <p class="ft__base">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10.2c0 5.4-8 11.4-8 11.4s-8-6-8-11.4a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.8"/></svg>
